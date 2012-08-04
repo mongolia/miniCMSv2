@@ -1,0 +1,70 @@
+.bg_norepeat{
+	background-repeat:no-repeat;
+}.bg_repeatx{
+	background-repeat:repeat-x;
+}.bg_repeaty{
+	background-repeat:repeat-y;
+}
+.talbar_title{
+	padding-top:6px;
+	padding-bottom:6px;
+	background-image:url(../images/talbar_bg.jpg);
+	background-repeat:repeat-x;
+	font-weight:bold;
+	color:#333;
+	padding-left:10px;
+	margin-top:3px;
+	clear:both;
+}
+ul{
+	list-style-image:url(../images/sum.gif);
+}
+a.makers:link,a.makers:visited{
+	color:#0081d4;
+}a.makers:hover{
+	display:block;
+	background-image:none;
+}
+#maker ul li:hover{
+	background-color:#e2e2e2;
+}
+#tuslahMenu a{
+	display:block;
+	color:#0081d4;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+#autoUraldaanMenu a{
+	display:block;
+	color:#0081d4;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+
+h2 a {
+	font-size:11px; float:right; font-weight:normal;
+}
+#searchCarHome input{
+	padding:3px;
+	font-size:12px;
+	border:1px solid #ddd;
+	background-color:#FFF;
+}
+#searchCarHome {width:300px; z-index:3;}
+#searchCarHome span { font-weight:bold; margin-top:12px; display:block; margin-bottom:3px;}
+#searchCarHome div{ cursor:pointer;}
+
+.searchButton{
+	background-image:url(../images/button_bg.jpg);
+	width:178px;
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	color:#FFF;
+	padding-top:12px;
+	padding-bottom:14px;
+	height:14px;
+	margin-top:20px;
+	margin-left:20px;
+}
+#menuListById{ line-height:17px; margin-left:-20px;}

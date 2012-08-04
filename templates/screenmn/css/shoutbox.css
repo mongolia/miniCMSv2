@@ -1,0 +1,83 @@
+#shoutboxTitle{
+
+	background-image:url(../../shopazmn/images/talbar_title_bg_blue.jpg);
+
+	background-repeat:repeat-y;
+
+	background-position:right;
+
+	background-color:#158eff;
+
+	height:22px;
+
+	color:#FFFFFF;
+
+	font-weight:bold;
+
+	padding-left:25px;
+
+	padding-top:3px;
+
+}
+
+.shoutbox_input{
+
+	font-family:Tahoma;
+
+	font-size:11px;
+
+	border:1px solid #bcddfc;
+
+	height:20px;
+
+	font-weight:bold;
+
+	color:#333333;
+
+	padding-top:3px;
+
+	margin-top:2px;
+
+}
+
+.shoutbox_textarea{
+
+	font-family:Tahoma;
+
+	font-size:11px;
+
+	border:1px solid #bcddfc;
+
+	font-weight:bold;
+
+	color:#333333;
+
+	padding:3px;
+
+	margin-top:2px;
+
+}.shoutbox_button{
+
+	font-family:Tahoma;
+
+	font-size:11px;
+
+	background-image:url(../../shopazmn/images/button_bg.gif);
+
+	background-repeat:repeat-x;
+
+	padding-left:5px;
+
+	padding-right:5px;
+
+	height:22px;
+
+	border:1px solid #565656;
+
+	margin-top:4px;
+
+	color:#FFFFFF;
+
+	font-weight:bold;
+
+}

@@ -1,0 +1,64 @@
+.catid1{
+	font-weight:bold;
+	color:#000000;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#catid2{
+	background-image:url(../images/sum.png);
+	background-repeat:no-repeat;
+	border-bottom:1px dotted #dfdfdf;
+	height:16px;
+	padding-left:15px;
+	display:block;
+	margin-right:10px;
+	margin-left:10px;
+	background-position:3px 5px;
+	font-weight:normal;
+}
+#catid2:hover{
+	background-color:#dddddd;
+	color:#333333;
+}
+a #catid2:link,a #catid2:visited{
+	color:#575757;
+}
+.productTitle{
+	font-weight:bold;
+	color:#000000;
+}
+.productContentShort{
+	font-size:9px;
+	margin-bottom:6px;
+}
+.productType{
+	color:#e72600;
+	font-size:9px;
+	margin-top:6px;
+}
+.productPrice{
+	color:#e72600;
+	font-weight:bold;
+}
+#productMoreLink{
+	padding:5px;
+	width:100px;
+	clear:both;
+	text-align:center;
+	margin-bottom:6px;
+	margin-top:6px;
+	text-transform:uppercase;
+	border:1px solid #737373;
+	display:block;
+	background-color:#eeeeee;
+}
+#productMoreLink:hover{
+	background-color:#f5f5f5;
+}
+a.productMoreLink:link, a.productMoreLink:visited,a.productMoreLink:active {
+	color:#737373;
+}
+a.productMoreLink:hover {
+	text-decoration: underline;
+	color: #333;
+}

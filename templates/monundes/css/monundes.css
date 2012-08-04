@@ -1,0 +1,26 @@
+a.menuTop0:link,a.menuTop0:visited,a.menuTop0:active{
+	color:#FFF;
+}
+a.menuTop0:hover{
+	font-weight:bold;
+}
+#userCommands a{
+	display:block;
+	padding-top:4px;
+	padding-bottom:4px;
+}
+#userCommands a:hover{
+	background-color:#F5F5F5;
+}
+.talbarContent{
+	padding:10px;
+	background-color:#FFF;
+}
+a.menuForUser:link,a.menuForUser:active,a.menuForUser:visited{
+	padding-top:6px; padding-bottom:8px; color:#FFF;
+	display:block;
+}
+.jetonListSub{
+	width:100px;
+	float:left;
+}

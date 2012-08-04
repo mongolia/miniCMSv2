@@ -1,0 +1,12 @@
+.loginTitle,.userPanelTitle{
+	background-image:url(../images/talbar_title_bg_blue.jpg);
+	background-repeat:repeat-y;
+	background-position:right;
+	background-color:#158eff;
+	height:22px;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding-left:25px;
+	padding-top:2px;
+}.loginTBL{
+}

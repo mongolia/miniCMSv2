@@ -1,0 +1,37 @@
+.loginTitle,.userPanelTitle{
+	height:22px;
+	color:#333333;
+	font-weight:bold;
+	padding-left:25px;
+	display:none;
+}.loginTBL{
+	color:#FFF;
+	width:100%;
+	margin-top:0px;
+}
+table.loginTBL a,#commandsUser div a{
+	color:#FFF;
+}
+#commandsUser div {
+	padding-bottom:3px;
+}
+.login_input{
+	border:1px solid #bebebe;
+	background-color:#FFF;
+	padding:4px;
+	width:150px;
+}
+.login_button{
+	background-image:url(../images/button_bg.jpg);
+	background-repeat:repeat-x;
+	border-bottom:1px solid #bebebe;
+	border-top:1px solid #bebebe;
+	text-align:center;
+	font-weight:bold;
+	color:#333;
+	display:block;
+	width:150px;
+}
+div .userPanelTitle img{
+	float:left;
+}

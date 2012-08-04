@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<cross-domain-policy>
+  <allow-access-from domain="*.ookla.com" />
+  <allow-access-from domain="*.speedtest.net" />
+  <allow-access-from domain="*.yadii.net" />
+  <allow-access-from domain="*.unegui.com" />
+  <allow-access-from domain="*.unegui.net" />
+  <allow-access-from domain="*.yadii.org" />
+  <allow-access-from domain="*.az.mn" />
+</cross-domain-policy>

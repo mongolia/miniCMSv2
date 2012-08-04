@@ -1,0 +1,21 @@
+.talbar{
+	padding:5px;
+	border:1px solid #DDDDDD;
+	background-color:#F5F5F5;
+}
+a.menuLeft:link,a.menuLeft:visited,a.menuLeft:active{
+	display:block;
+	padding-left:20px;
+	padding-bottom:4px;
+	padding-top:4px;
+	padding-right:5px;
+	border-bottom:1px solid #DDD;
+	background-image:url(../images/sum.gif);
+	background-repeat:no-repeat;
+}
+a.menuLeft:hover{
+	background-color:#ddd;
+}
+sup{
+	color:#F7941c;
+}

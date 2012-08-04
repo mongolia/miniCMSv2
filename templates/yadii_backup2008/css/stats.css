@@ -1,0 +1,12 @@
+a.StatsImage:link,a.StatsImage:visited;a.StatsImage:active,a.StatsImage:hover{
+	float:left;
+	border:0px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.StatsImage{
+	float:left;
+	border:0px;
+	padding-left:5px;
+	padding-right:5px;
+}

@@ -1,0 +1,12 @@
+.loginTitle,.userPanelTitle{
+	background-image:url(../images/row3_bg.png);
+	background-position:0px -2px;
+	background-repeat:repeat-x;
+	border:1px solid #bcddfc;
+	color:#158eff;
+	font-weight:bold;
+	padding:5px;
+	margin-top:6px;
+	clear:both;
+}.loginTBL{
+}

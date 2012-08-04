@@ -1,0 +1,19 @@
+.search_input{
+	padding:3px;
+	border:1px solid #f7941c;
+	background-color:#FFFFFF;
+	font-family:Tahoma;
+	font-size:11px;
+	width:120px;
+}.search_button{
+	padding-bottom:2px;
+	padding-top:2px;
+	padding-left:10px;
+	padding-right:10px;
+	border:1px solid #fdd6a7;
+	background-color:#fbb25b;
+	color:#333333;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+}

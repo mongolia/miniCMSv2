@@ -1,0 +1,234 @@
+h1{
+	font-size:18px;
+	font-weight:bold;
+	color:#53a8fc;
+	font-family:Tahoma;
+	margin-top:6px;
+}
+h2{
+	font-size:14px;
+	font-weight:bold;
+	color:#f7941c;
+	font-family:Tahoma;
+	margin-top:6px;
+}
+hr{
+	size:1px;
+	border:1px solid #DDDDDD;
+}
+#mbmTimeConverter{
+	display:none;
+}
+#contentTitle{
+	font-weight:bold;
+	color:#175796;
+	font-size:13px;
+	font-family:tahoma;
+	margin-bottom:6px;
+	margin-top:6px;
+	clear:both;
+	cursor:pointer;
+}
+#contentShort{
+	margin-bottom:6px;
+	margin-top:6px;
+	display:block;
+	margin-top:12px;
+	clear:both;
+}
+#contentMore{
+	line-height:17px;
+}
+#contentListTitle{
+	font-weight:bold;
+	font-size:11px;
+	color:#0066FF;
+	cursor:pointer;
+	margin-bottom:5px;
+}
+#contentListTitle:hover{
+	text-decoration:underline;
+}
+#contentTitleVideo{
+	font-weight:bold;
+}a.contentMoreLink:link, a.contentMoreLink:visited,a.contentMoreLink:active {
+	color:#0066FF;
+	padding:3px;
+	width:150px;
+	clear:both;
+	display:block;
+}
+a.contentMoreLink:hover {
+	text-decoration: underline;
+	color: #333;
+}
+#Paging{
+	padding:3px; 
+	text-align:center;
+	color:#333333;
+	margin-top:20px;
+	margin-bottom:6px;
+	display:block;
+	clear:both;
+}
+#page_numbers{
+	padding:3px;
+	margin-left:2px;
+	border:1px solid #DDDDDD;
+	background-color:#f5f5f5;
+}
+#page_numbers:hover{
+	background-color:#e2e2e2;
+}
+.borderBlue{
+	border:1px solid #175796;
+}#query_result{
+	border: 1px solid #DDDDDD;
+	background:#f5f5f5;
+	font-weight:bold;
+	padding:5px;
+	color:#f7941c;
+	margin-bottom:12px;
+	margin-top:12px;
+	text-align:center;
+}
+.comment{
+	background-color:#f5f5f5;
+	color:#000000;
+	border:1px solid #DDDDDD;
+	padding:5px;
+}
+.tbl_dddddd{
+	border:1px solid #DDDDDD;
+	background-color:#f5f5f5;
+	padding:5px;
+}
+.e2{
+	color:#e2e2e2;
+}.d2{
+	color:#d2d2d2;
+}
+.list_header{
+	height:25px;
+	font-weight:bold;
+	background-color:#dddddd;
+	color:#000000;
+	text-align:left;
+}.tblHeader{
+	height:25px;
+	background-color:#DDDDDD;
+	font-weight:bold;
+}
+/*CONTENT COMMENT STATRS*/
+#contentCommentFormTitle{
+	background-image:url(../images/row3_bg.png);
+	background-repeat:repeat-x;
+	height:21px;
+	display:block;
+	font-family:tahoma;
+	font-size:14px;
+	font-weight:bold;
+	color:#333333;
+	padding:3px;
+	margin-top:6px;
+	margin-bottom:6px;
+}
+#contentComments{
+	margin-top:6px;
+	margin-bottom:6px;
+}
+#contentCommentForm{
+	margin-top:6px;
+	margin-bottom:6px;
+}
+#commentUsername{
+	padding-left:5px;
+	padding-bottom:3px;
+	padding-top:3px;
+	font-weight:bold;
+	color:#FFFFFF;
+	font-family:tahoma;
+	font-size:11px;
+	margin-top:6px;
+	display:block;
+	background-color:#a4bfdd;
+	border:1px solid #608d9f;
+}
+#commentUserComment{
+	padding-left:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	margin-bottom:6px;
+	background-color:#f5f5f5;
+	border-bottom:1px solid #608d9f;
+	border-right:1px solid #608d9f;
+	border-left:1px solid #608d9f;
+}
+/*CONTENT COMMENT ENDS*/
+
+/*DROP DOWN MENU starts*/
+.dropDownTable{
+	width:100%;
+}
+a.submenu_drop:link, a.submenu_drop:visited,a.submenu_drop:active {
+	text-decoration: none;
+	color: #fff;
+	display:block;
+}
+a.submenu_drop:hover {
+	text-decoration: underline;
+	color: #333;
+}
+.submenu{
+	position:absolute;
+	display:none;
+	background-color:#7093dd;
+	width:150px;
+	text-align:left;
+	left:0px;
+	background-image:url(../images/submenu_bg.png);
+	background-repeat:repeat-x;
+	top:20px;
+}
+#submenu{
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:20px;
+	background-image:url(../images/sum_submenu.png);
+	background-repeat:no-repeat;
+	background-position:8px 10px;
+}
+#submenu:hover{
+	background-color:#d5e5fa;
+}
+.menu_dropdown{
+	height:25px;
+	text-align:center;
+	position:relative;
+	color:#ffffff;
+	padding-top:5px;
+}
+.menu_dropdown:hover{
+	height:25px;
+	background-image:url(../images/menu_bg_hover.png);
+	background-repeat:no-repeat;
+}
+.dropdown_menu_selected{
+	text-decoration: underline;
+	color: #ffffff;
+	background-image:url(../images/menu_bg_hover.png);
+	background-repeat:no-repeat;
+	height:30px;
+	font-weight:bold;
+	text-align:center;
+}
+#dropDownComment{
+		position:absolute;
+		width:540px;
+		margin-left:400px;
+		text-align:center;
+		font-weight:bold;
+		color:#FFFFFF;
+		font-size:16px;
+}
+/*DROP DOWN MENU ends*/

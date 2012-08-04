@@ -1,0 +1,56 @@
+#contentTitle{
+	font-weight:bold;
+	color:#333333;
+}
+#contentShort{
+	display:block;
+	border:1px solid #DDDDDD;
+	background-color:#f5f5f5;
+	padding:5px;
+	margin-bottom:6px;
+	margin-top:6px;
+}
+/* more button*/
+#contentMoreLink{
+	padding:5px;
+	border:1px solid #dddddd;
+	text-align:center;
+	margin-bottom:6px;
+	margin-top:6px;
+}
+#contentComments{
+	padding:10px;
+}
+#contentCommentsTitle{
+	font-weight:bold;
+}
+#contentCommentFormTitle{
+	background-color:#f5f5f5;
+	border:1px solid #DDDDDD;
+	padding:5px;
+	margin-bottom:6px;
+	margin-top:6xp;
+	font-weight:bold;
+	color:#F7941c;
+}
+/*video news comment*/
+#videoComment{
+	padding:10px;
+	border:1px solid #DDDDDD;
+	background-color:#f5f5f5;
+	margin-bottom:6px;
+	margin-top:6px;
+}
+#errorMain{
+	border:1px solid #FF0000;
+	padding:5px;
+	margin-bottom:5px;
+	background-color:#FF9595;
+	font-weight:bold;
+	text-align:center;
+	color:#333333;
+}.tblHeader{
+	height:25px;
+	background-color:#DDDDDD;
+	font-weight:bold;
+}

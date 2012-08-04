@@ -1,0 +1,87 @@
+.productTitle{
+	display:block;
+	padding-bottom:3px;
+	padding-top:3px;
+	text-align:center;
+	color:#333;
+	font-size:13px;
+}
+.productType{
+	display:none;
+}
+.productContentShort{
+	float:left;
+	width:160px;
+	height:240px;
+	border:1px solid #eeeeee;
+	padding:10px;
+	margin-right:5px;
+	margin-bottom:10px;
+	position:relative;
+}
+.productContentShort a{
+	text-align:center;
+	display:block;
+}
+.productPrice{
+	color:#e22869;
+	width:80px;
+	float:left;
+}
+.productPrice span{
+	display:block;
+}
+.productPrice .productPriceDicounted{
+	text-decoration:line-through;
+	color:#6e6e6e;
+}
+.productShortInfo{
+	clear:both;
+}
+a.productMoreLink:link,a.productMoreLink:visited{
+	font-weight:bold;
+	color:#e22869;
+	float:right;
+	padding-top:8px;
+}
+.catid1{
+	background-image:url(../images/talbar_bg.gif);
+	background-repeat:no-repeat;
+	background-position:left top;
+	background-color:#f8f8f8;
+	font-weight:bold;
+	color:#0081d4;
+	padding-left:25px;
+	padding-top:7px;
+	height:18px;
+	cursor:pointer;
+	border-bottom:1px solid #FFFFFF;
+}
+#catid2{
+	background-image:url(../images/sum1.gif);
+	background-repeat:no-repeat;
+	border-bottom:1px solid #f1f1f1;
+	height:18px;
+	padding-left:15px;
+	padding-top:6px;
+	display:block;
+	margin-right:10px;
+	margin-left:12px;
+}
+#catid2:hover{
+	background-color:#e2e2e2;
+	background-image:url('');
+}
+a.catid2:link,a.catid2:visited{
+	color:#65605a;
+}
+
+/*cat ul list starts*/
+#productCatsLeft ul{
+	margin-left:-20px;
+	list-style-image:url(../images/sum_b.png);
+}
+#productCatsLeft ul li{
+}
+#productCatsLeft ul li ul{ display:none;}
+/*cat ul list ends*/

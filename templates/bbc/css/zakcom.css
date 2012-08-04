@@ -1,0 +1,55 @@
+#topMenus a:link, #topMenus a:visited{
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#FFF;
+	float:left;
+	padding-left:15px;
+	padding-right:15px;
+	padding-top:6px;
+	padding-bottom:6px;
+}
+#topMenus a:hover{
+	background-color:#F5F5F5;
+	color:#333;
+}
+#homeContent h2{
+	color:#003663;
+	padding-top:5px;
+	border-top:1px dashed #ddd;
+}
+a.rssTitle:link,a.rssTitle:visited{
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	display:block;
+	margin-bottom:6px;
+	color:#000;
+}
+a.rssTitle:hover{
+}
+a.rssTitleList:link,a.rssTitleList:visited{
+	display:block;
+	margin-bottom:12px;
+	color:#000;
+}
+.rssShortcontent{
+	display:block;
+	text-align:justify;
+}a.moreLink:link,a.moreLink:visited{
+	font-size:12px;
+	font-family:Arial;
+	font-weight:bold;
+	display:block;
+	margin-bottom:6px;
+	color:#000;
+	color:#999;
+	margin-bottom:20px;
+	text-align:right;
+}
+a.moreLink:hover{
+	text-decoration:underline;
+}
+.border1{
+	border:1px solid #ddd;
+}

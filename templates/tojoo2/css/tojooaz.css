@@ -1,0 +1,51 @@
+a.menuTopLeft:link,a.menuTopLeft:visited,a.menuTopLeft:active{
+	padding-right:10px;
+	padding-left:10px;
+	color:#999;
+	text-decoration:none;
+}
+a.menuTopLeft:hover{
+	text-decoration:underline;
+}
+a.menuTopRight:link,a.menuTopRight:visited,a.menuTopRight:active{
+	padding-right:10px;
+	padding-left:10px;
+	color:#999;
+	text-decoration:none;
+}
+a.menuTopRight:hover{
+	text-decoration:underline;
+}
+.title{
+	color:#283891;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.title_33{
+	color:#333;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+
+#carSearchMiniForm span{
+	padding-left:10px;
+}
+.carSearchMiniFormInput{
+	width:135px;
+	border:1px solid #d6d6d6;
+	padding:3px;
+	margin-bottom:6px;
+}
+.carSearchMiniFormSubmit{
+	width:135px;
+	border:1px solid #d6d6d6;
+	background-color:#DDD;
+	padding:3px;
+	text-align:center;
+	font-weight:bold;
+	color:#000;
+}

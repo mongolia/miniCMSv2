@@ -1,0 +1,32 @@
+.input{
+	border:1px solid #175796;
+	height:20px;
+	font-weight:bold;
+	color:#333333;
+	padding-top:3px;
+	margin-top:2px;
+}
+input,select{
+	font-family:tahoma;
+	font-size:11px;
+	padding-left:3px;
+	padding-right:3px;
+	border:1px solid #e2e2e2;
+	margin-top:2px;
+}
+.textarea{
+	border:1px solid #175796;
+	font-weight:bold;
+	color:#333333;
+	padding-top:3px;
+	margin-top:2px;
+}.button{
+	background-image:url(../images/bg_button.gif);
+	background-repeat:repeat-x;
+	padding-left:5px;
+	padding-right:5px;
+	border:1px solid #DDDDDD;
+	height:22px;
+	border:1px solid #175796;
+	margin-top:4px;
+}

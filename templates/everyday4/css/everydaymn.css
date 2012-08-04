@@ -1,0 +1,45 @@
+a.menuTop:link,a.menuTop:visited,a.menuTop:active{
+	padding-top:6px;
+	height:23px;
+	width:98px;
+	text-align:center;
+	color:#FFF;
+	background-image:url(../images/button_bg.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	margin-left:2px;
+	display:block;
+	float:left;
+	margin-bottom:3px;
+}
+a.menuTop:hover{
+	background-image:url(../images/button_bg.png);
+	background-repeat:no-repeat;
+	background-position:0px -29px;
+}
+.title_talbar{
+	background-color:#2299fe;
+	padding-left:10px;
+	font-weight:bold;
+	color:#FFF;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+a.menuLeft:link,a.menuLeft:visited,a.menuLeft:active{
+	padding-left:20px; padding-right:10px;
+	padding-bottom:4px; padding-top:6px;
+	border-bottom:1px dotted #DDD;
+	font-weight:bold;
+	font-size:11px;
+	font-family:Tahoma;
+	color:#921321;
+	background-image:url(../images/sum.gif);
+	background-repeat:no-repeat;
+	background-position:5px 12px;
+	display:block;
+}
+a.menuLeft:hover{
+	background-image:none;
+	background-color:#f5f5f5;
+	color:#000;
+}

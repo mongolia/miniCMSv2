@@ -1,0 +1,129 @@
+#changeLang{
+	padding:2px;
+	border:1px solid #abadb3;
+	color:#626262
+}
+#topMenu{
+	height:31px;
+	display:block;
+	border-bottom:1px solid #dcdcdc;
+	background-image:url(../images/menu_bg.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding-left:15px;
+	position:relative;
+	clear:both;
+	z-index:88;
+}
+#topMenu a{
+	padding-left:12px;
+	padding-right:12px;
+	padding-top:8px;
+	padding-bottom:9px;
+	font-family:Arial;
+	font-size:11px;
+	color:#a3a3a3;
+	float:left;
+	z-index:89;
+}
+#topMenu a:hover{
+	padding-top:7px;
+	padding-bottom:9px;
+	padding-left:11px;
+	padding-right:11px;
+	border-left:1px solid #dcdcdc;
+	border-right:1px solid #dcdcdc;
+	border-bottom:1px solid #FFF;
+	border-top:1px solid #dcdcdc;
+	color:#ee1c25;
+	background-color:#FFF;
+	text-decoration:none;
+}
+#leftMenu{
+	margin-right:10px;
+}
+#leftMenu div{
+	margin-left:20px;
+	background-repeat:no-repeat;
+	background-position:left 11px;
+	padding-bottom:5px;
+	padding-top:4px;
+}
+#leftMenu a:link,#leftMenu a:visited{
+	background-image:url(../images/leftmenu_bg.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding-bottom:8px;
+	padding-top:2px;
+	margin-left:12px;
+}
+#leftMenu a:hover{
+	color:#fe7e01;
+}
+#leftMenu .leftMenu_active {
+	font-weight:bold;
+	color:#fe7e01;
+	display:block;
+}
+#leftMenu .leftMenu_inactive {
+	display:block;
+	color:#606060;
+}
+#leftMenu a.leftSubmenu:link,#leftMenu a.leftSubmenu:visited{
+	background-repeat:no-repeat;
+	background-position:4px 8px;
+	display:block;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:16px;
+	margin-left:32px;
+}
+a.submenu_active:link,a.submenu_active:visited{
+	background-image:url(../images/sum3.gif);
+	font-weight:bold;
+	color:#fe7e01;
+}
+a.submenu_inactive:link,a.submenu_inactive:visited{
+	background-image:url(../images/sum2.gif);
+	color:#606060;
+}
+#apuContent{
+	width:750px;
+	padding-bottom:25px;
+	margin:0px auto;
+	display:block;
+}
+
+
+#footerRight{
+	margin-right:20px;
+	text-align:right;
+}
+#footerRight a{
+	color:#777;
+	background-image:url(../images/sum_f2.gif);
+	background-position:0px 4px;
+	background-repeat:no-repeat;
+	padding-left:12px;
+	padding-right:8px;
+}
+a.copyright:link,a.copyright:visited{
+	color:#606060;
+}
+.productsDropDown{
+	border:1px solid #e3e9ef;
+	color:#626262;
+	width:160px;
+	padding-bottom:3px;
+	padding-top:3px;
+	padding-left:8px;
+	padding-right:7px;
+}
+#apuContent {
+	line-height:14px;
+}
+#homeNews .contentMoreLink{
+	padding-bottom:12px;
+	margin-bottom:12px;
+	border-bottom:1px solid #f2f2f2;
+}

@@ -1,0 +1,1 @@
+<A href="%link%" class="rssTitleList" target="_blank">%title%</A>

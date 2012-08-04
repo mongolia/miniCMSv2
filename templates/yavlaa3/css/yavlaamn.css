@@ -1,0 +1,8 @@
+#headerBanner{
+	margin-top:5px;
+}
+#headerBanner div{
+	display:block;
+	margin-bottom:5px;
+	border:1px solid #ca2727;
+	clear:both;

@@ -1,0 +1,2 @@
+[18-Jul-2009 02:49:32] PHP Fatal error:  Call to undefined function  mbmshowcontents() in /home/suuderc/public_html/templates/suudercom/home.php on line 3
+[24-Aug-2009 13:25:22] PHP Fatal error:  Call to undefined function  mbmshowcontents() in /home/suuderc/public_html/templates/suudercom/home.php on line 3

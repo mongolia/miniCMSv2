@@ -1,0 +1,130 @@
+.bg_norepeat{
+	background-repeat:no-repeat;
+}.bg_repeatx{
+	background-repeat:repeat-x;
+}.bg_repeaty{
+	background-repeat:repeat-y;
+}
+.talbar{
+	border:1px solid #dcdcdc;
+	padding:7px;
+	margin-bottom:2px;
+}
+.title_right{
+	background-color:#dcdcdc;
+	padding-top:8px;
+	padding-bottom:8px;
+	font-weight:bold;
+	padding-left:11px;
+	font-size:11px;
+}
+#topMenus{
+	display:block;
+	padding-left:4px;
+	background-image:url(../images/menu_bg.jpg);
+	background-repeat:repeat-x;
+	height:25px;
+	padding-top:10px;
+}
+div#topMenus a{
+	padding-left:10px;
+	padding-right:10px;
+	color:#FFF;
+	padding-top:12px;
+	padding-bottom:12px;
+	height:11px;
+}.topmenu_active_shuu{
+	background-image:url(../images/menu_bg_hover.jpg);
+	background-repeat:repeat-x;
+	background-color:#d90c5d;
+}
+div#topMenus a:hover,a.topmenu_active{
+	background-image:url(../images/menu_bg_hover.jpg);
+	background-repeat:repeat-x;
+	background-color:#d90c5d;
+}
+#topSubmenu{
+	display:block;
+	padding-left:4px;
+	background-image:url(../images/submenu_bg.jpg);
+	background-repeat:repeat-x;
+	height:24px;
+	padding-top:10px;
+	color:#FFF;
+}
+a.top_submenus:link,a.top_submenus:visited,a.top_submenus:active{
+	padding-left:10px;
+	padding-right:10px;
+	color:#FFF;
+}
+
+.talbar ul,.talbar ol {
+	padding-left:20px;
+}
+.talbar ul a,.talbar ol a{
+	color:#e40d62;
+	line-height:15px;
+	text-decoration:none;
+}
+.talbar ul a:hover,.talbar ol a:hover{
+	color:#ffffff;
+}
+#newPosts ul{
+	list-style-image:url(../images/sum_newposts.gif);
+}#whoisInfo{
+	background-color:#eaeaea;
+	}
+#commentUsersContent img{
+	width:80px;
+}
+#mbmTimeConverterContentComment{
+	display:block;
+	color:#000;
+	font-size:9px;
+	margin-bottom:6px;
+}
+#comment_content{
+	border:1px solid #bbb;
+	padding:3px;
+	width:98%;
+	height:90px;
+	margin-top:6px;
+	font-family:tahoma;
+	font-size:11px;
+}#comment_name{
+	border:1px solid #bbb;
+	padding:3px;
+	font-family:tahoma;
+	font-size:11px;
+}
+#userCP img{
+	float:left;
+} 
+#ilike{
+	color:#df1c6a;
+}
+#IlikeValues:hover{
+	color: #ffffff;
+	background-color: #E40D62;
+}
+
+.hits{
+	text-decoration:none;
+	color:#4d4d4d;
+	font-style:italic;
+	padding-left:5px;
+}
+#menuPath {
+	padding:3px;
+	display:block;
+	border:2px solid #FFF;
+	background-color:#e8e8e8;
+}
+#menuPath a:link,#menuPath a:visited,#menuPath a:active{
+	color:#222; 
+	padding-left:10px;
+	padding-right:10px;
+}
+.talbar .supNew{
+	color:#E40D62;
+}

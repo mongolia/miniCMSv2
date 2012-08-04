@@ -1,0 +1,413 @@
+<!DOCTYPE html public "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>			
+
+<style>
+body {font:84.5% tahoma,arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}
+</style>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/combo?2.7.0/build/reset-fonts-grids/reset-fonts-grids.css&2.7.0/build/assets/skins/sam/skin.css">
+
+            <link rel="stylesheet" type="text/css" media="all" href="http://l.yimg.com/a/lib/pim/r/abook/yab3/2.7.5/all/eagle2_blue.css" />
+
+    
+
+        
+
+        <title>Yahoo! Address Book - open_moogii</title>
+        <meta http-equiv="pics-label" content='(pics-1.1 "http://www.icra.org/ratingsv02.html" l gen true for "http://address.yahoo.com/yab/us" r ( nz 0 vz 0 lz 0 oz 0 ca 1))'>
+		<script type="text/javascript" language="JavaScript">
+<!-- // <![CDATA[
+if(typeof document.charset != "undefined" &&
+   document.charset != "UTF-8" &&
+   document.charset != "utf-8") {
+       document.charset = "UTF-8";
+}
+// ]]> -->
+		</script>
+
+    </head>
+    <body>    <div id="masthead">
+        <!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- Static Masthead -->
+<form name="yhdr_form" id="masthead_form" 
+      action="http://search.yahoo.com/search" 
+      target="_blank" accept-charset="utf-8">
+    <div id="ygma">
+        <input type="hidden" name="fr" value="ush1-add"/>
+                    <input type="hidden" name="ei" value="utf-8"/>
+            
+        <div id="masthead_row1">
+            <span class="masthead_search">
+                <img src="http://l.yimg.com/a/i/us/hdr/el/uh_crn2.gif" 
+                    id="img_crnr" border="0" height="14" width="13" align="bottom" alt=""
+                /><img src="http://l.yimg.com/a/i/us/nt/hdr/stw.gif" width="34" height="17" alt="Search the web"> 
+                <input type="text" name="p" size="12" title="Enter search terms here" maxlength="100"/>
+                <input class="ygbt" type="submit" value="Search" title="Search"/>
+            </span>
+                              <span class="masthead_link"><a href="http://www.yahoo.com" target="_top">Yahoo!</a></span>
+                                          <span class="masthead_link"><a href="http://my.yahoo.com" target="_top">My Yahoo!</a></span>
+                                          <span class="masthead_link"><a href="http://mail.yahoo.com" target="_top">Mail</a></span>
+                                          <span class="masthead_link"><a href="http://www.yahoo.com/bin/set" target="_top">Make Yahoo! your home page</a></span>
+             
+        </div>
+
+        <div id="masthead_row2">
+            <span id="masthead_logo"><a href="http://address.yahoo.com"><img id="ygmalogo" src="http://l.yimg.com/a/i/brand/purplelogo/mail/co/us.gif" width="264" height="26" alt="Yahoo! Contacts"></a></span>
+            <div id="masthead_welcome1">Welcome, <span id="masthead_login">open_moogii</span></div>
+            <div id="masthead_property_links">
+            <a href="http://address.yahoo.com" target="_top">Address Book Home</a> - <a href="http://help.yahoo.com/l/us/yahoo/addressbook/" target="_top">Help</a> 
+            </div>
+            <div id="masthead_welcome2">
+                [<a href="http://login.yahoo.com/config/login?logout=1&.done=http://address.yahoo.com&.src=ab&.intl=us" target="_top">Sign Out</a>, <a href="http://edit.yahoo.com/config/eval_profile?.done=http://address.yahoo.com&.src=ab&.intl=us" target="_top">My Account</a>]            </div>
+        </div>
+    </div>
+</form>
+    </div>  <!-- end masthead -->
+        <div></div>
+     
+        <div id="north_ad"><!-- SpaceID=0 robot -->
+</div>
+     
+
+        <div id="pimnav">
+            <div>
+                <ul id="apps">
+                                    <li class="first" id="mail"><a href="http://us.rd.yahoo.com/ab_us/pimnav/mail/*http://mail.yahoo.com" class="first">Mail</a></li>
+                                    <li id="addresses" class="selected"><a href="?.rand=633955583" class="first"  id="qa_abtab1" ><em>Contacts</em></a></li>
+                                    <li id="calendar"><a href="http://us.rd.yahoo.com/ab_us/pimnav/mail/*http://calendar.yahoo.com/" class="first">Calendar</a></li>
+                                                    <li class="last" id="notepad"><a href="http://us.rd.yahoo.com/ab_us/pimnav/mail/*http://notepad.yahoo.com/" class="first">Notepad</a></li>
+                                </ul>
+                                                  </div>
+        </div>
+
+<!-- this button bar only contains the Done button -->
+<div id="topglobalnavigation" class="globalnavigation">
+    <ul class="first">
+        <li><a href="?1&amp;VPC=options&amp;.rand=633955583" class="button"  id="qa_done1" >Done</a></li>
+    </ul>
+</div>
+
+<div id="optionsview">
+
+  <!-- main content panel (originally white and grey, with one round corner) -->
+  <table id="priwrap" cellpadding="0" cellspacing="0" width="100%"><colgroup><col width="1"><col width="*"></colgroup><tbody><tr>
+    <td id="sec">
+      <div id="optionsnav" class="simplemodule sidebar">
+    <div class="shd">
+        <div class="nw"> </div>
+        <div class="ne"> </div>
+    </div>
+    <div class="sbd">
+        <div class="label">Options</div>
+        <ul>
+                            <li><a href="http://mrd.mail.yahoo.com/colors">Colors</a></li>
+                                        <li><a href="http://mrd.mail.yahoo.com/options">Mail</a></li>
+                        <li class="selected"><a href="?&amp;VPC=options&amp;.rand=633955583">Address Book</a></li>
+                            <li><a href="http://calendar.yahoo.com/?v=70">Calendar</a></li>
+                                        <li><a href="http://notepad.yahoo.com/?v=165">Notepad</a></li>
+                                        <li><a href="http://edit.yahoo.com/config/eval_profile?.done=http%3A%2F%2Faddress.yahoo.com%2F%3F%26VPC%3Dimport_export%26.rand%3D633955583">Account Information</a></li>
+                                    
+        </ul>
+    </div>
+    <div class="sft">
+        <div class="sw"> </div>
+        <div class="se"> </div>
+        <div class="clearfix"><!-- blank --></div>
+    </div>
+</div>
+
+    </td>          <!-- closes sec container -->
+    <td id="pri">
+      <div id="nwcnr">&nbsp;</div>
+      
+      <!-- the header that says Import and Export (originally white) -->
+      <h1>Import and Export</h1>
+
+      <div id="import" class="optioncontainer alternatinga">
+
+
+  <!-- the section header that says Import -->
+  <h2 class="fontH2 fontBold">Import<span id="import_help_link"><a href="#" class="importhelplink fontLink">Get Help</a></span> </h2>
+  <div class="formcontainer"> <!-- container for the forms and help -->
+
+
+    <div id="maincontent_import_body">
+
+      <form method="POST" enctype="multipart/form-data" action="" accept-charset="utf-8">
+
+        <!-- options, comboboxes, buttons -->
+        <div id="maincontent_import_left">
+          <input type="hidden" name=".crumb" id="crumb1" value="3liSauDzHFA">
+          <input type="hidden" name=".src" value="">
+          <input type="hidden" name="VPC" value="import_export">          <ol>
+            <!-- 1. -->
+            <li>
+              <dl>
+                <dt>
+                  Choose a program to import contacts from:                </dt>
+                <dd>
+                  <select name="import_format">
+                    <option value="msocsv">Microsoft Outlook (.CSV file)</option>
+                    <option value="ldif">Netscape (.LDIF file)</option>
+                    <option value="ycsv">Yahoo! (.CSV file)</option>
+                    <option value="vcf">vCard (.VCF file)</option>
+                  </select>
+                </dd>
+              </dl>
+            </li>
+            <!-- 2. -->
+            <li>
+              <dl>
+                <dt>
+                  Go to that program (application) and export the appropriate records.                </dt>
+                <dd class="helptext">
+                  (refer to the Help section on right)                </dd>
+              </dl>
+            </li>
+            <!-- 3. -->
+            <li>
+              <dl>
+                <dt>
+                  Specify the file to import:                </dt>
+                <dd>
+                  <input type="file" accept="text" name="file_upload" />
+                </dd>
+              </dl>
+            </li>
+
+            <!-- 4. -->
+            <li>
+              <dl>
+                <dt>
+                  Press Import Now to Import the file:                </dt>
+                <dd>
+                  <input name="submit[action_import_file]" type="submit" value="Import Now" />
+                </dd>
+              </dl>
+            </li>
+          </ol>
+        </div><!-- closes yab_maincontent_import_left -->
+      </form>
+    </div>
+
+  </div> <!-- closes formcontainer -->
+  <div class="clearfloats"></div>
+</div> <!-- closes the import module -->
+      <div id="export" class="optioncontainer alternatingb">
+
+
+  <!-- the section header that says Export -->
+  <h2 id="maincontent_export_header" class="fontH2 fontBold">Export<span id="export_help_link"><a href="#" class="exporthelplink fontLink">Get Help</a></span></h2>
+
+  <!-- the line that instructs the user to pick an option -->
+  <h3>Choose the program you want to export to and click the corresponding button:</h3>
+
+  <!-- the remainder of the export panel -->
+  <div class="formcontainer">
+
+
+    <!-- options, comboboxes, buttons -->
+    <form method="POST" action="" accept-charset="utf-8">
+      <input type="hidden" name=".crumb" id="crumb2" value="3liSauDzHFA">
+      <input type="hidden" name=".src" value="">
+      <input type="hidden" name="VPC" value="import_export">      <div class="propertylist content">
+        <dl>
+          <div>
+            <dt class="fontBold">Microsoft Outlook:</dt>
+            <dd><ul>
+              <!-- depending on the separator we might have one or two options here -->
+                                <input name="submit[action_export_outlook]" type="submit" value="Export Now" />
+                    
+                                </ul></dd>
+          </div>
+
+          <div>
+            <dt class="fontBold">Netscape/Thunderbird:</dt>
+            <dd><ul>
+              <input name="submit[action_export_ldif]" type=submit value="Export Now" />
+            </ul></dd>
+          </div>
+
+          <div>
+            <dt class="fontBold">Yahoo! CSV:</dt>
+            <dd><ul>
+              <!-- depending on the separator we might have one or two options here -->
+                              <input name="submit[action_export_yahoo]" type="submit" value="Export Now" />
+                                                </ul></dd>
+          </div>
+
+          <div>
+            <dt class="fontBold">vCard Single File:<br />
+              <small>(recommended for Palm Desktop users)</small>
+            </dt>
+            <dd><ul>
+              <input class="fbutton" name="submit[action_export_vcard]" type="submit" value="Export Now" />
+            </ul></dd>
+          </div>
+
+          <div>
+            <dt class="fontBold">vCard, Zip of .VCF files:<br />
+             <small>(One .VCF file per contact, Outlook compatible)</small>
+            </dt>
+            <dd><ul>
+              <input class="fbutton" name="submit[action_export_vcard2]" type="submit" value="Export Now" />
+            </ul></dd>
+          </div>
+        </dl>
+      </div><!-- closes yab_maincontent_export_left -->
+    </form>
+  </div> <!-- closes form / help container -->
+  <div class="clearfix"><!--blank--></div>
+</div> <!-- closes export module -->
+    </td>
+  </tr></tbody></table>
+</div>            <!-- closes optionsview ID module -->
+
+<div id="bottomglobalnavigation" class="globalnavigation">
+    <ul class="first">
+        <li><a href="?1&amp;VPC=options&amp;.rand=633955583" class="button"  id="qa_done2" >Done</a></li>
+    </ul>
+</div>
+
+		<div id="footer">
+			<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<!-- SpaceID=0 robot -->
+<div id="mastfoot">
+
+	<div id="mastfoot_legal">
+		<span id="mastfoot_copyright">Copyright &copy; 2009 <a href="http://www.yahoo.com">Yahoo! Inc.</a> All Rights Reserved.</span>
+		<a target="_top" href="http://docs.yahoo.com/info/terms/">Terms of Service</a> - <a href="http://docs.yahoo.com/info/copyright/copyright.html">Copyright/IP Policy</a>	</div>
+	<div id="mastfoot_privacy">
+		NOTICE: We collect personal information on this site.<br>To learn more about how we use your information, see our <a target="_top" href="http://privacy.yahoo.com/privacy/us">Privacy Policy</a>	</div>
+
+</div>
+		    <div style="float: right; font-size: 65%; font-color: #333;">
+2.7.5<br></div>		</div>
+        <script type="text/javascript">
+     function load_js_strings() {
+     (function(){if (!(YAHOO && YAHOO.addressbook && YAHOO.addressbook.Yala)){throw("Yala not defined!");}else{var Yala=YAHOO.addressbook.Yala;
+Yala.register('INTL_YAB_NUM_CONTACTS', 'You have %s contact(s).');
+Yala.register('INTL_YAB_AB2_VIEW', 'View');
+Yala.register('INTL_YAB_SUBHEAD_SEPARATOR', ':');
+Yala.register('INTL_YAB_SORTMENU_SORTED', 'Sorted');
+Yala.register('INTL_YAB_SORTMENU_BY_FIRSTNAME', 'First Name');
+Yala.register('INTL_YAB_NUM_SELECTED_CONTACTS', 'You have selected %s contact(s).');
+Yala.register('INTL_YAB_FILTERMENU_ALLCONTACTS', 'All Contacts');
+Yala.register('INTL_YAB_FILTERMENU_DELETED', 'Deleted Contacts');
+Yala.register('INTL_YAB_SEARCH_RESULT_HEAD', 'Search Results (%s)');
+Yala.register('INTL_YAB_NEW_CONTACT_NAME', '- Untitled -');
+Yala.register('INTL_YAB_DTABLE_MSG_EMPTY', 'No Contacts');
+Yala.register('INTL_YAB_DTABLE_MSG_EMPTY_CONN', 'No Connections');
+Yala.register('INTL_YAB_DTABLE_MSG_LOADING', 'Loading Contacts');
+Yala.register('INTL_YAB_DTABLE_CONTACT_LOADING', 'loading...');
+Yala.register('INTL_YAB_CATEGORY_EDIT_BUTTON_DONE', 'DONE');
+Yala.register('INTL_YAB_DETAILED_FIELD_CATEGORIES', 'Categories:');
+Yala.register('INTL_YAB_TOOLTIP_ADD', 'Add a contact');
+Yala.register('INTL_YAB_TOOLBAR_ADD_CONTACT', 'Add Contact');
+Yala.register('INTL_YAB_TOOLBAR_ADD_CATEGORY', 'Add Category');
+Yala.register('INTL_YAB_TOOLBAR_ADD_CONNECTION', 'Add Connection');
+Yala.register('INTL_YAB_TOOLBAR_BTN_MOREACTIONS', 'Tools');
+Yala.register('INTL_YAB_CONNECTIONTOOL_BACK_TO_CONTACTS', 'Back to Contacts');
+Yala.register('INTL_YAB_TOOLTIP_BACK_TO_CONTACTS', 'Return to your address book view');
+Yala.register('INTL_YAB_CONN_WS_HEADER_MULTI', 'Connections (%s)');
+Yala.register('INTL_YAB_CONN_WS_HEADER_SINGLE', 'Connection (1)');
+Yala.register('INTL_YAB_AB2_UNFILED', 'Unfiled');
+Yala.register('INTL_YAB_CDETAIL_HEADER_CHANGE', 'Change');
+Yala.register('INTL_YAB_BTN_ADD_CATEGORIES', 'Add');
+Yala.register('INTL_YAB_NO_CATEGORY_NAME_ERROR', 'Please enter a category name for the new category you would like to create');
+Yala.register('INTL_YAB_FIELD_NEW_LABEL', 'New Label');
+Yala.register('INTL_YAB_BUTTON_DELETE', 'Delete');
+Yala.register('INTL_YAB_BUTTON_CANCEL', 'Cancel');
+Yala.register('INTL_YAB_DELETE_CATEGORY_CONFIRM', 'You have <b>%s contacts</b> in the <b>%s category.</b><p>By deleting this category, you will not remove these contacts from your Yahoo! Contacts.</p><p><b>Are you sure you want to delete this category?</b></p>');
+Yala.register('INTL_YAB_DELETE_CATEGORY_QUESTION', 'Delete Category ?');
+Yala.register('INTL_YAB_CATEGORY_NAME_EXISTS', 'The category name you entered already exists. Please try again.');
+Yala.register('INTL_YAB_CATEGORY_ADD_SUCCESS', 'The category was successfully added.');
+Yala.register('INTL_YAB_CATEGORY_EDIT_SUCCESS', 'The category name was successfully edited.');
+Yala.register('INTL_YAB_CATEGORY_NAME_TOO_LONG', 'The maximum length of a category name is 15 characters. Please enter a shorter category name.');
+Yala.register('INTL_YAB_CONFIRM_EDIT_CANCEL', 'Any changes you made while editing will be lost. Are you sure you want to continue ?');
+Yala.register('INTL_YAB_CONFIRM_EDIT_CLOSE', 'Any changes you made while editing will be lost.');
+Yala.register('INTL_YAB_CHKBOX_WS_HEADER_SINGLE', '1 Contact selected');
+Yala.register('INTL_YAB_CHKBOX_WS_HEADER_MULTI', '%s Contacts selected');
+Yala.register('INTL_YAB_EDIT_WEBSITE_LABEL', 'Website %s');
+Yala.register('INTL_YAB_NEW_CATEGORY_TOOLTIP', 'Create a new category name');
+Yala.register('INTL_YAB_TYPE_NEW_CATEGORY', 'Type a new category');
+Yala.register('INTL_YAB_NO_CATEGORY_NAME_ERROR', 'Please enter a category name for the new category you would like to create');
+Yala.register('INTL_YAB_CATEGORY_ADD_ERRORMULTI_TEXT', 'There was a problem adding these contacts to categories. Please try again.');
+Yala.register('INTL_YAB_CATEGORY_ADD_ERRORSINGLE_TEXT', 'There was a problem adding this contact to categories. Please try again.');
+Yala.register('INTL_YAB_NO_CONTACTS_HAVE_EMAILS', 'None of the contacts you selected have an e-mail address or Yahoo ID. Please select other contacts and try again.');
+Yala.register('INTL_YAB_EMPTY_CATEGORY_DELETE', 'Are you sure you want to delete this category ?');
+Yala.register('INTL_YAB_EMPTY_DELETE_PROGRESS', 'Deleting Contacts...');
+Yala.register('INTL_YAB_DELETE_CONTACT_PROGRESS', 'Deleting Contact ...');
+Yala.register('INTL_YAB_GENERIC_SOCDIR_OUTAGE_ERROR', 'We\'re sorry. Some features currently are unavailable due to technical difficulties. Please try again later.');
+Yala.register('INTL_YAB_AB2_THERE_WAS_A_TEM', 'There was a temporary problem accessing your address book. Please try again in 10 minutes. If you continue to see this problem, please notify customer support. Thank you.');
+Yala.register('INTL_YAB_EMPTY_DELETE_ERRORSINGLE_TEXT', 'There was a problem deleting %s. Please try again.');
+Yala.register('INTL_YAB_EMPTY_DELETE_ERRORMULTI_TEXT', 'There was a problem deleting these contacts. Please try again.');
+Yala.register('INTL_YAB_TRASH_WS_RESTORE_ERROR', 'There was a problem restoring %s. Please try again.');
+Yala.register('INTL_YAB_TRASH_WS_RESTOREALL_ERROR', 'There was a problem restoring these contacts. Please try again.');
+Yala.register('INTL_YAB_TRASH_WS_RESTORE_YIDERROR', 'There was a problem restoring %1$s. You already have a contact associated with Messenger ID "%2$s".');
+Yala.register('INTL_YAB_TRASH_WS_HEADER_SELMULTI', '%s Deleted Contacts selected');
+Yala.register('INTL_YAB_TRASH_WS_HEADER_SELSINGLE', '%s Deleted Contact selected');
+Yala.register('INTL_YAB_RESTORE_CONTACT_PROGRESS', 'Restoring Contact...');
+Yala.register('INTL_YAB_RESTORE_CONTACTS_PROGRESS', 'Restoring Contacts...');
+Yala.register('INTL_YAB_TRASH_WS_DELETEPERM_ERROR', 'There was a problem permanently deleting %s. Please try again.');
+Yala.register('INTL_YAB_TRASH_WS_DELETEPERMALL_ERROR', 'There was a problem permanently deleting these contacts. Please try again.');
+Yala.register('INTL_YAB_SAVE_CONTACT_PROGRESS', 'Saving Contact...');
+Yala.register('INTL_YAB_REMOVE_CONNECTION_PROGRESS', 'Removing Connection...');
+Yala.register('INTL_YAB_UPDATE_LIST_PROGRESS', 'Updating contacts list...');
+Yala.register('INTL_YAB_FILTERMENU_CONNECTIONS', 'Connections');
+Yala.register('INTL_YAB_FILTERMENU_ALLCONTACTS', 'All Contacts');
+Yala.register('INTL_YAB_FILTERMENU_DELETED', 'Deleted Contacts');
+Yala.register('INTL_YAB_FILTERMENU_UNFILED', 'Unfiled');
+Yala.register('INTL_YAB_TOO_MANY_INVITEES_ERROR', 'You have exceeded the number of allowed recipients to invite.');
+Yala.register('INTL_YAB_DIALOG_UNSAVED_ADDEDIT_TEXT', 'You were editing a contact. Do you want to save your changes?');
+Yala.register('INTL_YAB_DIALOG_UNSAVED_CATEGORY_TEXT', 'You were editing a category. Do you want to save your changes?');
+Yala.register('INTL_YAB_INVALID_INVITE_CONTACTS_MSG', 'One or more of the selected contacts is a connection or does not have an email or Y!Messenger ID.  These contacts will not receive an invitation.');
+Yala.register('INTL_YAB_MAX_COUNT_INVITES_MSG', 'You may not invite more than %s contacts at a time.');
+Yala.register('INTL_YAB_IS_SYSTEM_CATEGORY', 'The category name you entered is a special name in use by the system. Please try another name.');
+
+}})()
+    }
+</script>
+
+
+
+        
+        <script src="http://yui.yahooapis.com/combo?2.7.0/build/utilities/utilities.js&2.7.0/build/datasource/datasource-min.js&2.7.0/build/autocomplete/autocomplete-min.js&2.7.0/build/container/container-min.js&2.7.0/build/menu/menu-min.js&2.7.0/build/button/button-min.js&2.7.0/build/datatable/datatable-min.js&2.7.0/build/json/json-min.js&2.7.0/build/tabview/tabview-min.js"></script>
+        <script src="http://l.yimg.com/a/lib/pim/r/abook/yab3/2.7.5/all/eagle2.js"></script>
+
+    
+
+
+
+<script type="text/javascript">
+    <!-- <CDATA[[
+        if(typeof CallDOMLoadedHandlers != "undefined"){
+            CallDOMLoadedHandlers();
+        }
+    // ]]> -->
+</script>
+
+    </body>
+    <!-- 
+	// TS: 1252239049
+	// P: 57.02
+	
+	// T: 4.05
+	
+	// B: 0
+	// BTX: 0
+    // Y: 27.85
+
+    // R: 5.31
+    // U: 4.63
+    // A: 0.43
+    // O: 0
+
+--> 
+
+		
+<!-- // RPPID:26529 --></html><!-- web219.address.pim.mud.yahoo.com uncompressed/chunked Sun Sep  6 05:10:49 PDT 2009 -->

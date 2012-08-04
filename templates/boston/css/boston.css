@@ -1,0 +1,43 @@
+#mainContainer{
+	padding-left:10px;
+	padding-right:10px;
+	width:960px;
+	margin:0px auto;
+	border-left:1px dotted #DDD;
+	border-right:1px dotted #DDD;
+}
+#bannerTop{
+	height:104px;
+	display:block;
+	border-bottom:1px dotted #DDD;
+}
+#menuTOP{
+	clear:both;
+	background-color:#d4e7f9;
+}
+#menuTOP a:link, #menuTOP a:visited{
+	padding-left:10px; padding-right:10px;
+	padding-top:6px; padding-bottom:6px;
+	display:block;
+	float:left;
+}
+#mainContent .col{
+	width:310px;
+	margin-right:10px;
+	float:left;
+}
+.column1{
+	width:195px;
+	float:left;
+}
+.column2{
+	width:600px;
+	float:left;
+	padding-left: 15px; padding-right:15px;
+	border-left:1px solid #DDD;
+	border-right:1px solid #DDD;
+}
+.column3{
+	width:130px;
+	float:left;
+}

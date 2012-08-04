@@ -1,0 +1,56 @@
+#shoutboxTitle{
+	background-image:url(../images/talbar_title_bg.png);
+	background-position:0px -2px;
+	background-repeat:repeat-x;
+	border:1px solid #bcddfc;
+	color:#158eff;
+	font-weight:bold;
+	padding:5px;
+}
+.shoutbox_input{
+	font-family:Tahoma;
+	font-size:11px;
+	border:1px solid #bcddfc;
+	height:20px;
+	font-weight:bold;
+	color:#333333;
+	padding-top:3px;
+	margin-top:2px;
+}
+.shoutbox_textarea{
+	font-family:Tahoma;
+	font-size:11px;
+	border:1px solid #bcddfc;
+	font-weight:bold;
+	color:#333333;
+	padding:3px;
+	margin-top:2px;
+	width:325px;
+}.shoutbox_button{
+	background-image:url(../images/talbar_title_bg.png);
+	background-repeat:repeat-x;
+	background-position:0px -2px;
+	font-family:Tahoma;
+	font-size:11px;
+	padding-left:10px;
+	padding-right:10px;
+	height:22px;
+	border:1px solid #bcddfc;
+	margin-top:4px;
+	color:#158eff;
+	font-weight:bold;
+}
+#shoutboxResult{
+	display:block;
+	width:335px;
+	height:300px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	margin-right:2px;
+}
+
+.shoutContent{
+	display:block;
+	padding:3px;
+	border-bottom:1px dashed #DDDDDD;
+}

@@ -1,0 +1,18 @@
+.title_poll{ /*garchig*/
+	height:20px;
+	padding-top:5px;
+	color:#3da4f9;
+	font-weight:bold;
+	padding-left:35px;
+	background-color:#f5d9b6;
+	background-image:url(../images/bg_poll_title.jpg);
+	background-repeat:repeat-x;
+}
+.poll_title{ /*asuult n*/
+	font-weight:bold;
+	text-align:center;
+}
+.poll_tbl{
+	background-color:#edfaef;
+	padding-bottom:6px;
+}

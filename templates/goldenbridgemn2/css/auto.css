@@ -1,0 +1,125 @@
+#autoCarsList{
+	position:relative;
+	display:block;
+}
+#autoCarsList .carThumb{
+	float:right;
+	margin-right:5px;
+	border: 1px solid #DDD;
+	background-color:#F5F5F5;
+	padding:2px;
+}
+#autoCarsList ul li{
+	width:100px;
+	display:block;
+	float:left;
+	padding:5px;
+	display:block;
+	text-align:center;
+}#autoCarsList ul {
+	list-style:none;
+}
+
+
+/*car details start*/
+#autoCarInfo{
+	display:block;
+	position:relative;
+}
+#autoCarInfo ul{
+}
+#autoCarInfo ul li{
+	float:left;
+	width:200px;
+	display:block;
+	margin-bottom:10px;
+}
+#autoCarInfo ul li span{
+	font-weight:bold;
+	padding-right:5px;
+}
+/*car details end*/
+/*car car photos start*/
+#autoCarPhotos{
+   position: relative; /* important */
+   overflow-x: hidden; /* important */
+   display:block;
+   text-align:center;
+}
+#autoCarBigPhoto{
+	display:block;
+	padding:5px;
+	border:1px solid #DDD;
+	background-color:#F5F5F5;
+	display:none;
+   z-index:-100;
+   margin:0px auto;
+   width:500px;
+}
+#autoCarPhotosContent {
+   top: 0; /* important */
+   margin-left:0px auto; /* important */
+   list-style:none;
+   overflow-x:auto;
+}
+
+.autoCarPhotosImage {
+	float:left;
+	padding:5px;
+	text-align:center;
+	position:relative;
+}
+.autoCarPhotosImage span{
+	float:left;
+	padding:3px;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	width:10px;
+	left:10px;
+	top:10px;
+	background-color:#000;
+	border:1px solid #FFF;
+	position:absolute;
+}
+.autoCarPhoto{
+	padding:2px;
+	border:1px solid #DDD;
+	background-color:#F5F5F5;
+	cursor:pointer;
+	margin-right:5px;
+}
+.autoCarPhoto:hover,.autoCarPhoto:active{
+	padding:2px;
+	border:1px solid #000;
+	background-color:#000;
+}
+
+#autoCarPhotosLightbox{
+	text-align:center;
+	display:block;
+}
+/*car car photos end*/
+
+
+/*car owner info starts*/
+#autoCarOwner span{
+	font-weight:bold;
+	color:#333;
+	font-size:16px;
+	color:#F7941C;
+}
+#autoCarOwner ul {
+	list-style:none;
+}
+#autoCarOwner ul li{
+	margin-bottom:6px;
+}
+
+#autoCarOwner ul li span{
+	font-weight:bold;
+	padding-right:5px;
+	font-size:11px;
+	color:#000;
+}
+/*car owner info ends*/

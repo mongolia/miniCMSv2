@@ -1,0 +1,7 @@
+a.menuFooter:link,a.menuFooter:visited{
+	color:#FFF;
+	text-decoration:none;
+}
+a.menuFooter:hover{
+	text-decoration:underline;
+}

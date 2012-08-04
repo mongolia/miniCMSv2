@@ -1,0 +1,15 @@
+#dicTitle{
+	width:220px;
+	padding-left:20px;
+	color:#003663;
+	text-transform:uppercase;
+	font-weight:bold;
+	padding-top:4px;
+}
+#dicResult{
+	display:block;
+}
+#dicForm{
+	position:relative;
+	display:block;
+}

@@ -1,0 +1,55 @@
+#shoutboxTitle{
+	display:none;
+	width:300px;
+	background-image:url(../images/bg_title_g.jpg);
+	background-repeat:no-repeat;
+	height:26px;
+	padding-left:20px;
+	color:#f7941c;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+.shoutbox_input{
+	font-family:Tahoma;
+	font-size:11px;
+	border:1px solid #ddd;
+	height:20px;
+	font-weight:bold;
+	color:#333333;
+	padding-top:3px;
+	margin-top:2px;
+	width:300px;
+}
+.shoutbox_textarea{
+	font-family:Tahoma;
+	font-size:11px;
+	border:1px solid #ddd;
+	font-weight:bold;
+	color:#333333;
+	padding:3px;
+	margin-top:2px;
+	width:300px;
+}.shoutbox_button{
+	font-family:Tahoma;
+	font-size:11px;
+	background-image:url(../images/button_bg.gif);
+	background-repeat:repeat-x;
+	padding-left:5px;
+	padding-right:5px;
+	height:22px;
+	border:1px solid #ddd;
+	margin-top:4px;
+	color:#333;
+	font-weight:bold;
+}
+#shoutboxResult{
+	display:block;
+	width:300px;
+	height:200px;
+	overflow-y:auto;
+	overflow-x:hidden;
+	margin-right:2px;
+}
+#shoutboxResult span{
+	margin-top:12px;
+}

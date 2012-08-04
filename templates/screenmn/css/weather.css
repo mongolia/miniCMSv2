@@ -1,0 +1,16 @@
+#screenWeather{
+	
+    text-align:left;
+    color:#FFF;
+    padding:0px;
+}#screenWeather img {
+    float:left;
+	height:40px;
+}#screenWeather a:link,#WeatherBox a:visited {
+    float:left;
+    font-weight:bold;
+    color:#fff9c1;
+} 
+#WeatherTitle{
+	margin-left:-40px;
+}

@@ -1,0 +1,36 @@
+.leftTalbarTitle{
+	background-image:url(../images/lefttop_bg.jpg);
+	display:block;
+	height:20px;
+	color:#FFF;
+	font-size:12px;
+	padding-left:20px;
+	padding-top:9px;
+}.talbarBlue{
+	padding-top:9px;
+	height:20px;
+	background-image:url(../images/talbar_bg_blue.jpg);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-size:12px;
+}
+a.menu_left:link,a.menu_left:visited{
+	display:block;
+	color:#000;
+	padding-top:4px;
+	padding-bottom:4px;
+	padding-left:28px;
+	border-bottom:1px solid #c1c1c1;
+	background-image:url(../images/sum.gif);
+	background-repeat:no-repeat;
+}
+a.menu_left:active{
+	color:red;
+}
+a.menu_left:hover{
+	background-color:#F5f5f5;
+	background-position:-28px -22px;
+}
+table{
+	border-collapse:collapse;
+}

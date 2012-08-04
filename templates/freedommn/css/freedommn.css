@@ -1,0 +1,32 @@
+.bg_norepeat{
+	background-repeat:no-repeat;
+}.bg_repeatx{
+	background-repeat:repeat-x;
+}.bg_repeaty{
+	background-repeat:repeat-y;
+}
+.talbar_title{
+	background-image:url(../images/talbar_title_bg.jpg);
+	background-repeat:no-repeat;
+	padding-top:5px;
+	height:22px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding-left:20px;
+}
+.talbar_content{
+	background-color:#ffffdf;
+	border-right:1px solid #ff7e00;
+	border-left:1px solid #ff7e00;
+	padding:5px;
+}
+#topMenu a{
+	height:40px;
+	background-repeat:no-repeat;
+	display:block;
+	float:left;
+}
+#topMenu a:hover{
+	background-position:0px -40px;
+}

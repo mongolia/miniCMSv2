@@ -1,0 +1,167 @@
+#mainContainer{
+	margin:0 0 0 0;
+	visibility:visible;
+}
+#mainContainer_body{
+	width:960px;
+	margin:0 auto;
+	display:block;
+	margin-bottom:10px;
+}
+#header_menu{
+	background-image:url(../images/header_bg_g.jpg);
+	background-repeat:repeat-x;
+	padding-top:6px;
+	padding-bottom:7px;
+	padding-left:8px;
+	padding-right:8px;
+	font-weight:bold;
+	border-right:1px solid #6eb81a;
+	border-left:1px solid #6eb81a;
+	color:#FFFFFF;
+}
+#header_menu a:link,#header_menu a:visited{
+	font-size:11px;
+	color:#FFFFFF;
+	text-decoration:none;
+}#header_menu a:hover{
+	text-decoration:underline;
+}
+#row1{
+	height:88px;
+	background-image:url(../images/row1_bg.jpg);
+	background-repeat:repeat-x;
+	border-right:1px solid #e0e0e0;
+	border-left:1px solid #e0e0e0;
+	border-bottom:1px solid #e0e0e0;
+	background-position:bottom;
+	clear:both;
+	margin-bottom:4px;
+	position:relative;
+	display:block;
+}
+#row2{
+	position:relative;
+	display:block;
+}
+	#col_1{
+		display:block;
+		position:absolute;
+		width:230px;
+		left:0px;
+		top:0px;
+	}
+		.talbar1_2_title{
+			width:100px;
+			height:20px;
+			text-align:center;
+			font-weight:bold;
+			color:#000000;
+			background-repeat:no-repeat;
+			position:absolute;
+			padding-top:4px;
+		}
+		.menu_left{
+			padding-left:24px;
+			padding-top:3px;
+			padding-bottom:3px;
+			border-bottom:1px dotted #a9c9e2;
+			background-image:url(../images/menu_left_sum.gif);
+			background-repeat:no-repeat;
+			background-position:left top;
+			background-color:#f2f6fb;
+			display:block;
+		}
+		.menu_left:hover{
+			background-color:#FFFFFF;
+			background-position:0px -25px;
+			cursor:pointer;
+		}
+	#col_2{
+		display:block;
+		position:absolute;
+		left:234px;
+		top:0px;
+		width:725px;
+	}
+		#talbar2_col_1{
+			position:absolute;
+			display:block;
+			left:0px;
+			top:0px;
+			width:360px;
+		}
+		#talbar2_col_2{
+			position:absolute;
+			display:block;
+			left:364px;
+			top:0px;
+			width:360px;
+		}
+		
+		
+.talbar_title_g{
+	border:1px solid #FFFFFF;
+	padding-left:10px;
+	padding-top:6px;
+	padding-bottom:6px;
+	font-weight:bold;
+	color:#000000;
+	background-color:#e7ffc8;
+}
+.border_g{
+	border:1px solid #7fb902;
+	margin-bottom:4px;
+}
+.border_b{
+	border:1px solid #a9c9e2;
+	margin-bottom:4px;
+}		
+.talbar_title_b{
+	border:1px solid #FFFFFF;
+	padding-left:10px;
+	padding-top:6px;
+	padding-bottom:6px;
+	font-weight:bold;
+	color:#000000;
+	background-color:#cae5ff;
+}
+#footer{
+	display:block;
+	background-color:#f5f5f5;
+	padding-top:18px;
+	padding-bottom:18px;
+	border-top:1px solid #e6e6e6;
+	text-align:center;
+	width:100%;
+	line-height:17px;
+}
+a.menu_footer:link,a.menu_footer:visited,a.menu_footer:active{
+	color:#000000;
+	text-decoration:none;
+}
+a.menu_footer:hover{
+	text-decoration:underline;
+}
+#talbar1_1 img{
+	float:left;
+}
+
+.button_yellow{
+	background-image:url(http://www.yadii.net/templates/yadii/images/button_yellow.png);
+	background-repeat:no-repeat;
+	font-family:Arial;
+	font-weight:bold;
+	font-size:13px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:4px;
+	width:150px;
+	cursor:pointer;
+}
+.button_yellow:hover{
+	background-position:0px -25px;
+}
+.warezLinks a{
+	display:block;
+}

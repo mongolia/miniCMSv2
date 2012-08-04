@@ -1,0 +1,12 @@
+#topMenus a:link, #topMenus a:visited{
+	display:block;
+	padding-left:10px;
+	padding-right:10px;
+	line-height:24px;
+	float:left;
+	color:blue;
+}
+#topMenus a:hover{
+	background-color: #DDD;
+	color:#000;
+}

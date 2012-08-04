@@ -1,0 +1,14 @@
+.loginTitle,.userPanelTitle{
+	height:20px;
+	padding-top:5px;
+	color:#3da4f9;
+	font-weight:bold;
+	padding-left:35px;
+	background-color:#f5d9b6;
+	background-image:url(../images/bg_login_title.jpg);
+	background-repeat:repeat-x;
+}.loginTBL{
+	color:#333333;
+	margin-bottom:4px;
+	background-color:#fdfaf5;
+}

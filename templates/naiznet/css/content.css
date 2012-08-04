@@ -1,0 +1,109 @@
+h1{
+	font-size:18px;
+	font-weight:bold;
+	color:#53a8fc;
+	font-family:Tahoma;
+	margin-top:6px;
+}
+h2{
+	font-size:14px;
+	font-weight:bold;
+	color:#f7941c;
+	font-family:Tahoma;
+	margin-top:6px;
+}
+hr{
+	size:1px;
+	border:1px solid #DDDDDD;
+}
+#contentTitle{
+	font-weight:bold;
+	color:#333333;
+	font-size:13px;
+	font-family:tahoma;
+	margin-bottom:6px;
+}
+#contentShort{
+	margin-bottom:6px;
+	margin-top:6px;
+}
+#contentMore{
+	line-height:17px;
+}
+.talbarTitleYellow{
+	background-image:url(../images/title_bg_yellow.gif);
+	background-repeat:repeat-x;
+	height:22px;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding-left:10px;
+}.talbarTitleBlue{
+	background-image:url(../images/title_bg_blue.gif);
+	background-repeat:repeat-x;
+	height:21px;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding-left:10px;
+}.borderBlue{
+	border:1px solid #175796;
+}.loginTitle,.userPanelTitle{
+	background-image:url(../images/title_bg_blue.gif);
+	background-repeat:repeat-x;
+	height:22px;
+	color:#FFFFFF;
+	font-weight:bold;
+	padding-left:10px;
+	padding-top:3px;
+	font-size:11px;
+}#query_result{
+	border: 1px solid #DDDDDD;
+	background:#f5f5f5;
+	font-weight:bold;
+	padding:5px;
+	color:#f7941c;
+	margin-bottom:12px;
+	margin-top:12px;
+	text-align:center;
+}
+.comment{
+	background-color:#f5f5f5;
+	color:#000000;
+	border:1px solid #DDDDDD;
+	padding:5px;
+}
+.tbl_dddddd{
+	border:1px solid #DDDDDD;
+	background-color:#f5f5f5;
+	padding:5px;
+}
+.e2{
+	color:#e2e2e2;
+}.d2{
+	color:#d2d2d2;
+}
+.list_header{
+	height:25px;
+	font-weight:bold;
+	background-color:#dddddd;
+	color:#000000;
+	text-align:left;
+}
+.home_news_title,a.home_news_title:link,a.home_news_title:active,a.home_news_title:visited{
+	color:#f7941c;
+	font-weight:bold;
+}
+#contentCommentFormTitle{
+	display:block;
+	font-family:tahoma;
+	font-size:14px;
+	font-weight:bold;
+	color:#F7941c;
+	padding:3px;
+	background-color:#e2e2e2;
+	margin-top:6px;
+	margin-bottom:6px;
+}.tblHeader{
+	height:25px;
+	background-color:#DDDDDD;
+	font-weight:bold;
+}

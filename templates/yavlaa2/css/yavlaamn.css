@@ -1,0 +1,131 @@
+.title1{
+	background-image:url(../images/bg_title.gif);
+	background-repeat:no-repeat;
+	background-color:#353333;
+	padding-left:36px;
+	padding-top:10px;
+	padding-bottom:12px;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	color:#fbcb07;
+}
+.title1footer {
+	background-image:url(../images/bg_title.gif);
+	background-repeat:no-repeat;
+	background-color:#353333;
+	padding-left:36px;
+	padding-top:10px;
+	padding-bottom:15px;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	color:#fbcb07;
+	}
+#headerBanner{
+	margin-top:5px;
+}
+#headerBanner div{
+	display:block;
+	margin-bottom:5px;
+	border:1px solid #ca2727;
+	clear:both;
+}
+#menuLEFT h2{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	border-bottom:0px;
+	text-align:center;
+	
+	}
+a.menu_left:link,a.menu_left:visited,a.menu_left:active{
+	color:#353333;
+	display:block;
+	padding-bottom:3px;
+	padding-top:3px;
+	padding-left:18px;
+	border-bottom:1px dashed #666666;
+	background-image:url(../images/sum.gif);
+	background-repeat:no-repeat;
+	background-position:0px 5px;
+}
+a.menu_left:hover{
+	background-color:#f5f5f5;
+	background-image:none;
+}
+#searchU select{
+	padding:3px;
+	border:1px solid #fab30b;
+	color:#353333;
+	width:164px;
+	margin-bottom:6px;
+}
+#searchU .findButton{
+	height:22px;
+	width:100px;
+	color:#FFF;
+	font-weight:bold;
+	padding-top:4px;
+	padding-bottom:6px;
+	padding-left:30px;
+	padding-right:30px;
+	background-image:url(../images/title_bg_y.jpg);
+	background-repeat:repeat-x;
+	margin-left:10px;
+}
+#searchU h3{
+	color:#09C;
+	font-weight:bold;
+	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif;
+}
+#UNILIST .uniItem{
+	padding-top:10px;
+	padding-bottom:10px;
+	border-bottom:1px solid #DDD;
+}
+#UNILIST .uniItem:hover{
+	background-color:#F5F5F5;
+}
+#UNILIST .uniTitle{
+	font-weight:bold;
+	font-size:13px;
+	color:#099;
+	margin:9px;
+}
+#UNILIST .uniMore{
+	float:right;
+	margin:10px;
+	padding-top:20px;
+	border:0px;
+	
+}
+#uniMORE .uniTitle{
+	color:#099;
+	font-size:13px;
+	font-weight:bold;
+	margin:9px;
+}
+#uniMORE .uniShort,#uniMORE .uniMore{
+	line-height:16px;
+	margin:0px;
+}
+#bookingForm{
+	width:380px;
+	padding:5px;
+	border:1px solid #DDD;
+	background-color:#FC0;
+	color:#000;
+	float:right;
+	margin-left:10px;
+}
+#bookingForm form{
+	margin:0px;
+}
+.talbarBorder{
+	border:1px solid #F90;
+	margin:5px;
+}
+.talbarPadding{
+	margin-top:2px;
+}

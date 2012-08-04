@@ -1,0 +1,140 @@
+/* forum */
+.forumListTable{
+	border-collapse:collapse;
+	border:1px solid #cc3412;
+}
+.forumIcon{
+	width:40px;
+	text-align:center;
+	height:40px;
+}
+.forumUpperForumTitle{
+	font-size:14px;
+	color:#cc3412;
+	font-weight:bold;
+	display:block;
+	margin-bottom:6px;
+	margin-top:6px;
+}
+.forumListHeader{
+	background-image:url(../images/forum/bg_listheader.jpg);
+	background-repeat:repeat-x;
+	color:#fff;
+	font-weight:bold;
+	height:30px;
+}
+/*forum contents*/
+.forumContentCol_1{
+	width:130px;
+	background-color:#ffefeb;
+	padding:5px;
+	vertical-align:top;
+}
+.forumContentCol_2{
+	padding:5px;
+	vertical-align:top;
+}
+.forumListCell{
+}
+.forumTopicListHeader{
+	background-image:url(../images/forum/bg_topic_list_header.jpg);
+	background-repeat:repeat-x;
+	background-color:#ffefeb;
+	height:30px;
+	font-weight:bold;
+	color:#ffffff;
+	padding-left:5px;
+	padding-right:5px;
+}
+.forumTimeConverter{
+	font-weight:normal;
+	color:#ffefeb;
+}
+#forumListTitle{
+	font-weight:bold;
+	color:#f7941c;
+}
+#forumListTitle a:link,#forumListTitle a:visited{
+	color:#003399;
+}
+#forumListTitle a:active{
+	color:#FF0000;
+}
+#forumListTitle a:hover{
+	color:#f7941c;
+	text-decoration:underline;
+}
+
+#forum_newContent{
+	border: 1px solid #DDDDDD;
+	background-color:#f9f9f9;
+	padding:5px;
+	margin-bottom:6px;
+	margin-top:6px;
+}
+#forumNewContent{
+	margin-bottom:6px;
+	margin-top:6px;
+}
+#forumNewContentTitle{
+	margin-bottom:6px;
+	margin-top:6px;
+}
+
+#forumPath{
+	margin-bottom:6px;
+	margin-top:6px;
+}
+.forumTopicTitle{
+	font-weight:bold;
+	margin-bottom:6px;
+	margin-top:6px;
+}
+
+/*form elements*/
+.forum_input{
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	color:#333333;
+	border: 1px solid #333333;
+	padding:3px;
+}
+.forum_button{
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	color:#333333;
+	border: 1px solid #333333;
+	padding-left:10px;
+	padding-right:10px;
+}
+.forum_textarea{
+	width:95%;
+	font-family:Tahoma;
+	font-size:11px;
+	font-weight:bold;
+	color:#333333;
+	border: 1px solid #333333;
+	padding:3px;
+}
+/*form elements end*/
+/*buttons start*/
+#forumNewTopic{
+	margin-bottom:6px;
+	margin-top:6px;
+}
+#forumNewTopic:hover{
+	background-color:#FFFFFF;
+}
+#forumNewTopic a:link,#forumNewTopic a:visited{
+	color:#003399;
+}
+#forumNewTopic a:active{
+	color:#FF0000;
+}
+#forumNewTopic a:hover{
+	color:#f7941c;
+	text-decoration:underline;
+}
+/*buttons end*/

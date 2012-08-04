@@ -1,0 +1,38 @@
+a.menuTop0:link,a.menuTop0:visited,a.menuTop0:active{
+	color:#69a714;
+	font-weight:bold;
+	padding-left:10px;
+	padding-right:10px;
+	display:block;
+}
+a.menuTop0:hover{
+}
+.talbarContent{
+	padding:10px;
+	background-color:#FFF;
+}
+a.menuForUser:link,a.menuForUser:active,a.menuForUser:visited{
+	padding-top:6px; padding-bottom:8px; color:#FFF;
+	display:block;
+}
+.jetonListSub{
+	width:100px;
+	float:left;
+}
+.loginTalbar{
+	padding:16px;
+	height:111px;
+	width:198px;
+	background-image:url(../images/login_bg.jpg);
+	background-repeat:no-repeat;
+	margin-bottom:10px;
+}
+.talbarRight{
+	margin-bottom:10px;
+	display:block;
+}
+#uCommands a.userMenus:link, #uCommands a.userMenus:active,#uCommands a.userMenus:visited{
+	padding-top:2px; padding-bottom:2px; color:#FFF;
+	display:block;
+	margin-left:50px;
+}

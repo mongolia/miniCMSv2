@@ -1,0 +1,23 @@
+#azmnWeather{
+    text-align:left;
+    width:200px;
+    height:195px;
+    border:1px solid #DDDDDD;
+    color:#333;
+    padding:5px;
+    margin-top:10px;
+    background-color:#f5f5f5;
+}
+#WeatherTitle{
+    color:#000000;
+    font-weight:bold;
+}
+#WeatherBox{
+    color:#000000;
+}#WeatherBox img {
+    float:left;
+}#WeatherBox a:link,#WeatherBox a:visited {
+    float:left;
+    font-weight:bold;
+    color:#999999;
+} 

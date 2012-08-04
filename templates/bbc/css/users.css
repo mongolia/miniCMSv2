@@ -1,0 +1,23 @@
+.loginTitle,.userPanelTitle{
+	height:22px;
+	color:#333333;
+	font-weight:bold;
+	padding-left:25px;
+	padding-top:2px;
+	background-color:#f0fce3;
+	display:none;
+}.loginTBL{
+	color:#245e36;
+	border:0px solid #9ac012;
+}
+#userArea .userAvatar{
+	width:150px;
+}
+.login_button{
+	background-color:#FFF;
+	border:0px;
+	color:#245e36;
+}
+.login_input{
+	border:1px solid #DDD;
+}

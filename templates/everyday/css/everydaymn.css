@@ -1,0 +1,25 @@
+#mainContainer{
+	visibility:hidden;
+	margin:0px auto;
+	background-image:url(../images/bg1.png);
+	background-repeat:repeat-y;
+	width:970px;
+}
+.talbar_title_b{
+	background-color:#1C459D;
+	width:125px;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+}
+.talbar_title_r{
+	background-color:#e21f27;
+	width:125px;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-align:center;
+	color:#fff;
+	font-weight:bold;
+}

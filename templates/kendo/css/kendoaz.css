@@ -1,0 +1,23 @@
+.talbarTitleRed{
+	background-image:url(../images/talbar_bg_red.jpg);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	line-height:25px;
+	height:25px;
+}
+.talbarTitleBlue{
+	background-image:url(../images/talbar_bg_blue.jpg);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+	text-align:center;
+	line-height:25px;
+	height:25px;
+}
+.talbarGrey{
+	background-color:#f5f5f5;
+	display:block;
+	padding:5px;
+}

@@ -1,0 +1,109 @@
+#mainContainer{
+    width: 920px;
+    margin: 0px auto;
+    border-top: 2px solid #001121;
+}
+#mainContent{
+    padding: 10px;
+    background-color: #62bbeb;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+a.topMenu:link, a.topMenu:visited{
+	padding: 5px;
+	color: #FFF;
+	float:left;
+	margin-left:2px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	background-color:#36afe3;
+}
+a.topMenu:hover{
+	color:#000;
+}
+.homeCol{
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border: 0px;
+    background-image: url(../images/box_bg.jpg);
+    background-repeat: repeat-x;
+    background-color: #045789;
+    display: block;
+    padding: 10px;
+    height: 140px;
+}
+.homeCol h2{
+    color: #FFF;
+    font-size: 16px;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+.homeCol ul{
+    list-style-image: url(../images/sum.gif);
+}
+.homeCol ul li{
+    padding-bottom: 4px;
+    padding-top: 4px;
+    color: #FFF;
+}
+.homeCol ul li a:link, .homeCol ul li a:visited{
+    color: #FFF;
+    text-decoration: none;
+}
+.homeCol ul li a:hover{
+    text-decoration: underline;
+}
+
+#topUserCommands{
+	width:120px;
+	float:left;
+	position:relative;
+	text-align:center;
+	margin-left:2px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	background-color:#36afe3;
+	padding:5px;
+}
+#topUserCommands span:hover{
+	color:#333;
+	cursor: pointer;
+}
+#topCommands{
+	width:120px;
+	display:none;
+	position:absolute;
+	top:25px;
+	left:0px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	background-color:#36afe3;
+	padding:5px;
+	text-align:left;
+}
+#topCommands a:link, #topCommands a:visited{
+	padding-bottom:3px;
+	padding-top:3px;
+	padding-left:10px;
+	display:block;
+	text-decoration:none;
+	color:#FFF;
+	text-align:left;
+}
+#topCommands a:hover{
+	text-decoration:underline;
+	background-color:#f5f5f5;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+	color:#333;
+}
+#topCommands hr{
+	height:1px;
+	background-color:#DDD;
+	border:0px;
+}

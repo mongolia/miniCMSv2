@@ -1,0 +1,149 @@
+#DD{
+	display:block;
+	height:31px;
+	position:relative;
+}
+/* 
+	LEVEL ONE
+*/
+ul.dropdown                         { position: relative; margin-left:-40px; list-style:none; top:0px; margin-top:0px;z-index:8887;}
+ul.dropdown li                      { float: left; zoom: 1; text-align:center; background-image:url(../images/menu_sep.gif); background-repeat:no-repeat; background-position:right;}
+ul.dropdown a:hover		            { color: #000; }
+ul.dropdown a:active                { color: #ffa500; }
+ul.dropdown li a                    { display: block; border-right: 1px solid #FFF;
+	 								  color: #848484; text-transform:uppercase; font-size:13px; 
+									  padding-left:12px; padding-right:10px;
+									  padding-bottom:8px; padding-top:8px;
+									  font-family:Arial;
+									  font-weight:bold;
+									 }
+ul.dropdown li:last-child a         { border-right: none; } /* Doesn't work in IE */
+ul.dropdown li.hover,
+ul.dropdown li:hover                { position: relative; 
+										/*background-color:#8ebd0e;
+										background-image:url(../images/menu_sep_hover.gif);
+										background-repeat:no-repeat; 
+										background-position:right; */
+										}
+ul.dropdown li.hover a              { color: #333; }
+
+
+/* 
+	LEVEL TWO
+*/
+ul.dropdown ul 						{ 
+										width: 180px; 
+										visibility: hidden; 
+										background-color: #fff; 
+										border:1px solid #DDD; 
+										position: absolute; 
+										top: 29px; 
+										left: 15px; z-index:8888; padding-bottom:5px; 
+										}
+ul.dropdown ul li 					{ font-weight: normal; color: #FFF;
+									  float: none;text-align:left;
+									  z-index:8888;
+									  background-image:url(../images/sum.gif);
+									  background-position:left 6px;
+									  }
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+ul.dropdown ul li a					{ 
+										font-size:11px;
+										border-right: none; 
+										width: 100%; 
+										display: inline-block; 
+										text-transform:none; 
+									  padding-bottom:8px;
+									  padding-top:8px;
+									  border-bottom:1px solid #DDD;  } 
+
+/* 
+	LEVEL THREE
+*/
+ul.dropdown ul ul 					{ left: 200px; top: 0;z-index:8889; }
+ul.dropdown li:hover > ul 			{ visibility: visible; }
+
+
+/*my dropdown2 shuu*/
+@charset "utf-8";
+/* CSS Document */
+div.menusDD{
+	float:left;
+}
+#menusDD{
+	position:relative;
+}
+div.menusDD a,.menu_active{
+	color: #848484; text-transform:uppercase; font-size:13px; 
+	padding-left:12px; padding-right:10px;
+	padding-bottom:4px; padding-top:4px;
+	font-family:Arial;
+	font-weight:bold;
+	text-align:left; 
+	background-image:url(../images/menu_sep.gif); background-repeat:no-repeat; background-position:right;
+	float:left;
+	max-width:170px;
+}
+div.menusDD a:hover{
+	color:#848484;
+	text-decoration:none;
+}
+/* submenu nii gadna div*/
+#menusDD .menusDDsub{
+	display:none;
+	position:absolute;
+	left:0px;
+	top:25px;
+	background-color:#FFF;
+	width:980px;
+	padding-bottom:6px;
+	padding-top:3px;
+	background-image:url(../images/1.jpg);
+	background-repeat:repeat-x;
+	background-position:bottom;
+}
+.menusDDsubHeader{
+}
+.menusDDsubContent{
+	/*background-color:#fff;*/
+	padding-left:10px;
+	padding-right:10px;
+}
+/* submenu nii linknii div*/
+.menusDDsubContent div{
+	float:left;
+}
+.menusDDsubContent div a{
+	color:#848484;
+	font-weight:normal;/*
+	display:block;
+	
+	background-image:url(../images/sum_submenu.gif);
+	background-repeat:no-repeat;
+	*/
+	background-image:none;
+	background-position:2px 11px;
+	background-color:none;
+	text-align:left;
+	padding-left:8px;
+	padding-right:8px;
+	text-transform:none;
+	font-size:11px;
+	font-family:Arial;
+}
+.menusDDsubContent div a:hover{
+	/*
+	background-color:#FFF;
+	background-image:url(../images/sum_submenu.gif);
+	background-repeat:no-repeat;
+	background-position:2px 11px;
+	font-weight:bold;
+	*/
+	color:#00a650;
+	background-image:none;
+	font-size:11px;
+	font-family:Arial;
+}
+.menusDDsubFooter{
+}

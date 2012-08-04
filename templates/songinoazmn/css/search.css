@@ -1,0 +1,22 @@
+.search_input{
+	padding:3px;
+	border:1px solid #DDD;
+	background-color:#FFF;
+	font-family:Tahoma;
+	font-size:11px;
+	width:80px;
+}.search_button{
+	font-family:Tahoma;
+	font-size:11px;
+	background-image:url(../images/button_bg.jpg);
+	background-repeat:repeat-x;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:#e3e3e3;
+	height:28px;
+	margin-top:2px;
+	vertical-align:bottom;
+	border:1px solid #ddd;
+	color:#333;
+	font-weight:bold;
+}

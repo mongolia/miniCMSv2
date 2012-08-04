@@ -1,0 +1,47 @@
+#shopProductsList3 .shopItem{
+	margin-left:24px;
+	float:left;
+	width:130px;
+	margin-bottom:20px;
+	position:relative;
+	height:250px;
+}
+#shopProductsList3 .productThumb{
+	border: 1px solid #0081c2;
+}
+#shopProductsList3 .productTitle{
+	font-weight:bold;
+	text-align:center;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#shopProductsList3 .productNumber{
+	text-align:center;
+	font-weight:normal;
+	color:#333;
+	display:block;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#shopProductsList3 .productNumber span{
+	font-weight:bold;
+}
+#shopProductsList3 .productPrice{
+	font-weight:bold;
+	font-size:13px;
+	color:#d60028;
+	text-align:center;
+}
+
+#shopProductsList3 .productMoreLink{
+	width:110px;
+	height:26px;
+	background-image:url(../images/button_more.gif);
+	background-repeat:no-repeat;
+	bottom:0px;
+	position:absolute;
+	left:10px;
+}
+#shopProductsList3 .productMoreLink:hover{
+	background-position:0px -26px;
+}

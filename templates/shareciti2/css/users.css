@@ -1,0 +1,12 @@
+.loginTitle,.userPanelTitle{
+	height:22px;
+	color:#333333;
+	font-weight:bold;
+	padding-left:25px;
+	padding-top:2px;
+	background-color:#c5ddff;
+	display:none;
+}.loginTBL{
+	color:#333333;
+	margin-bottom:4px;
+}
