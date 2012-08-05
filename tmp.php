@@ -40,7 +40,7 @@ echo 'davhtsaagui: '.(int)$DB->mbm_result($vCMonth,0,'hits_u').'<br />';
 <br clear="all" />
 <br clear="all" />
 <?
-die('<hr />');
+echo('<hr />');
 $htmls_video[0] = '<table width="100%" cellpadding="3" cellspacing="2" border="0"><tr>';
 $htmls_video[2] = '<td align="center" width="25%" valign="top">';
 $htmls_video[3] = '</td>';

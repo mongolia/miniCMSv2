@@ -32,4 +32,3 @@ function getFootballTeam($v = array(
     
     return $r;
 }
-?>.

@@ -1,6 +1,6 @@
 <?
 
-//admin ruu handah user iin administration field = $config['domain'].$config['abs_dir'] utgatai tentsuu bna
+//admin ruu handah user iin administration field == $config['domain'].$config['abs_dir'] utgatai tentsuu bna
 $config['domain'] = "http://minicms.az.mn/";
 $config['abs_dir'] = "/home/azmn/public_html/minicms.az.mn/";
 $config['dir'] = "";
@@ -84,6 +84,7 @@ $image_types = array(
 //idevhtei module uudiig onooj ugnu. module idevhjeegui uyed tuhain module ruu handval heregtseet function uud bhgui bn gesen aldaa zaana.
 $modules_active = array(
                         //"blog",
+                        "survey",
                         "football",
                         "forum",
                         "poll",
@@ -109,6 +110,7 @@ $modules_active = array(
 //hed leveltei hereglech ali module ruu admin hesgees handahiig tohiruulj ugnu. admin heseg ruu yer n 3 bolon tuunees deesh leveltei hereglegchid handah bolomjtoi. bas administration field n zuv bh yostoi.
 $modules_permissions = array(
                             //"blog"=>3,
+                            "survey"=>3,
                             "football"=>3,
                             "forum"=>3,
                             "poll"=>3,

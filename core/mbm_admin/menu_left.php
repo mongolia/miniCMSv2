@@ -272,6 +272,20 @@
             Teams
           </a></div>
       </div>
+      
+      <div id="menu_main" onclick="show_sub('menu34')"><img src="images/icon_pg.jpg" width="23" height="19" hspace="3" align="absmiddle" />
+          Survey
+      </div>
+      <div id="menu34" style="display:none;	border-bottom:1px solid #000000;">
+          <div id="submenu"><a href="index.php?module=survey&cmd=add">
+            Add survey
+          </a></div>
+          <div id="submenu"><a href="index.php?module=survey&cmd=list">
+            List
+          </a></div>
+      </div>
+      
+      
       <div id="menu_main" style="display:none;" onclick="show_sub('menu88')"><img src="images/icon_users.gif" width="23" height="19" hspace="3" align="absmiddle" />Дуу хөгжим</div>
       <div id="menu88" style="display:none; border-bottom:1px solid #000000;">
           <div id="submenu"><a href="index.php?module=music&cmd=types"><strong>Хөгжмийн төрөл</strong></a></div>
