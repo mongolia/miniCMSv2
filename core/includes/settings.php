@@ -6,12 +6,19 @@ $DB = new DB($config);
 $DB2 = new DB($config_user);
 $PHPMAILER = new phpmailer();
 
+if(defined("DB_CHARSET")){
+	$DB->mbm_query("SET NAMES ".DB_CHARSET);
+}
+if(defined("CORE_DB_CHARSET")){
+	$DB2->mbm_query("SET NAMES ".CORE_DB_CHARSET);
+}
+
 $q_settings = "SELECT * FROM ".PREFIX."settings ";
 $r_settings = $DB->mbm_query($q_settings);
 for($i=0;$i<$DB->mbm_num_rows($r_settings);$i++){
 	if($DB->mbm_result($r_settings,$i,"name")=='COPYRIGHT'){
 		$settings_value = $DB->mbm_result($r_settings,$i,"value")
-						  .'<br /><a href="http://www.mng.cc" target="_blank" class="copyright">'
+						  .' <a href="http://www.mng.cc" target="_blank" class="copyright">'
 						  .'Developed by: miniCMS&trade; v2</a>';
 	}else{
 		$settings_value = $DB->mbm_result($r_settings,$i,"value");
@@ -105,12 +112,12 @@ if(!is_array($_SESSION['country'])){
 							if($_SESSION['lev']>0){
 								$DB2->mbm_query("UPDATE ".$DB2->prefix."users SET score=score+1 WHERE id='".$_SESSION['user_id']."' LIMIT 1");
 							}
-							$_SESSION['login_st'] = $DB2->mbm_result($r_userlogin,0,'firstname').' '.$DB2->mbm_result($r_userlogin,0,'lastname').' та тавтай морилно уу!';
+							$_SESSION['login_st'] = $DB2->mbm_result($r_userlogin,0,'firstname').' '.$DB2->mbm_result($r_userlogin,0,'lastname').' —Ç–∞ —Ç–∞–≤—Ç–∞–π –º–æ—Ä–∏–ª–Ω–æ —É—É!';
 						}
 					}else{
 						$result_txt = 'login=invalid_login';
 						$login_status = 4;
-						$_SESSION['login_st'] = '<span style="color:red;">Хэрэглэгчийн нэр эсвэл нууц үг буруу байна.</span>';
+						$_SESSION['login_st'] = '<span style="color:red;">–•—ç—Ä—ç–≥–ª—ç–≥—á–∏–π–Ω –Ω—ç—Ä —ç—Å–≤—ç–ª –Ω—É—É—Ü “Ø–≥ –±—É—Ä—É—É –±–∞–π–Ω–∞.</span>';
 					}
 					if(substr_count(base64_decode($_GET['url']),"?")==0){
 						$go_redirect = str_replace($result_txt,'',base64_decode($_GET['url'])).'?'.$result_txt;
@@ -122,7 +129,7 @@ if(!is_array($_SESSION['country'])){
 				}
 			break;
 			case 'logout';
-				$_SESSION['login_st'] = $_SESSION['user']['name'].' та дараа дахин зочлоорой! Баяртай.';
+				$_SESSION['login_st'] = $_SESSION['user']['name'].' —Ç–∞ –¥–∞—Ä–∞–∞ –¥–∞—Ö–∏–Ω –∑–æ—á–ª–æ–æ—Ä–æ–π! –ë–∞—è—Ä—Ç–∞–π.';
 				unset($_COOKIE[COOKIE_NAME]);
 				$_SESSION['lev']=0;
 				unset($_SESSION['user_id'],$_SESSION['user']);
