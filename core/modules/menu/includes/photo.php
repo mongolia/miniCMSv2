@@ -53,29 +53,6 @@ function mbmShowContentPhotos($content_id=0){
 	return $buf;
 }
 
-function getPhotoByContentId($content_id=0,$limit=1, $is_random=0,$minH=0,$minW=0){
-    global $DB, $DB2;
-    
-    $q = "SELECT * FROM ".$DB->prefix."menu_photos WHERE content_id='".$content_id."' ";
-    $q .= "AND height>".$minH." ";
-    $q .= "AND width>".$minW." ";
-    if($is_random!=0){
-        $q .= "ORDER BY RAND() ";
-    }
-    $q .= "LIMIT ".$limit;
-    
-    $r = $DB->mbm_query($q);
-    
-    $buf = '';
-    
-    for($i=0;$i<$DB->mbm_num_rows($r);$i++){
-        
-        $buf .= '<img src="'.$DB->mbm_result($r,$i,"url").'" class="'.$className.'">';
-    }
-    
-    return $buf;
-}
-
 /*
 
 function mbmShowContentPhotos($content_id=0){

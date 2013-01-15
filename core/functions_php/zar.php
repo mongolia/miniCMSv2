@@ -67,7 +67,7 @@ function mbmSMSprint(){
 		
 		$buf .= '<br clear="all" />';
 			$buf .= '<div style="padding-bottom:5px; border-bottom:1px solid #FF0000; color:#FF0000;">';
-			$buf .= 'Та <strong>156789</strong> дугаар руу зараа явуулснаар таны зар тус бүр 30 секундын турш нийт 1000 удаа харагдана.';
+			$buf .= 'Та <strong>156789</strong> дугаар руу зараа явуулснаар таны зар тус бүр 30 секундын турш багадаа 1000 удаа харагдана.';
 			$buf .= '</div>';
 		$buf .= '<br clear="both" />';
 	$buf .= '<div id="zarItems"></div>';

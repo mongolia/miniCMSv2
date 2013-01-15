@@ -9,7 +9,7 @@
 	if(isset($_GET['redirect'])){
 		header("Location: ".base64_decode($_GET['redirect']));
 	}
-	require_once("/home/azmn/public_html/yadii.net/config.php");
+	require_once("/domains/58346/web/config.php");
 	include(ABS_DIR.INCLUDE_DIR."includes/common.php");
 	
 	if(!isset($_SESSION['ln'])){

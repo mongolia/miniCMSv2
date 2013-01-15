@@ -1,110 +1,105 @@
 <?php
 
-require_once(str_replace('\\\\','/',dirname(__FILE__)).'/../class/config.class.php');
+require_once(str_replace('\\\\', '/', dirname(__FILE__)) . '/../class/config.class.php');
 
-require_once(str_replace('\\\\','/',dirname(__FILE__)).'/../class/util.class.php');
+require_once(str_replace('\\\\', '/', dirname(__FILE__)) . '/../class/util.class.php');
 
 
 
 
 
 // sets physical filesystem directory of web site root
-
 // if calculation fails (usually if web server is not apache) set this manually
 
-SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', str_replace("\\","/",SpawVars::getServerVar("DOCUMENT_ROOT")));
+SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', str_replace("\\", "/", SpawVars::getServerVar("DOCUMENT_ROOT")));
 
-if (!ereg('\$',SpawConfig::getStaticConfigValue('DOCUMENT_ROOT')))
-
-  SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', SpawConfig::getStaticConfigValue('DOCUMENT_ROOT').'/');
+if (substr(SpawConfig::getStaticConfigValue('DOCUMENT_ROOT'),-1) != '/')
+    SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', SpawConfig::getStaticConfigValue('DOCUMENT_ROOT') . '/');
 
 // sets physical filesystem directory where spaw files reside
-
 // should work fine most of the time but if it fails set SPAW_ROOT manually by providing correct path
 
-SpawConfig::setStaticConfigItem('SPAW_ROOT', str_replace("\\","/",realpath(dirname(__FILE__)."/..").'/'));
+SpawConfig::setStaticConfigItem('SPAW_ROOT', str_replace("\\", "/", realpath(dirname(__FILE__) . "/..") . '/'));
 
 // sets virtual path to the spaw directory on the server
-
 // if calculation fails set this manually
 
-SpawConfig::setStaticConfigItem('SPAW_DIR', '/'.str_replace(SpawConfig::getStaticConfigValue("DOCUMENT_ROOT"),'',SpawConfig::getStaticConfigValue("SPAW_ROOT")));
+SpawConfig::setStaticConfigItem('SPAW_DIR', '/' . str_replace(SpawConfig::getStaticConfigValue("DOCUMENT_ROOT"), '', SpawConfig::getStaticConfigValue("SPAW_ROOT")));
 
 /*
 
 
 
-// semi-automatic path calculation
+  // semi-automatic path calculation
 
-// comment the above settings of DOCUMENT_ROOT, SPAW_ROOT and SPAW_DIR
+  // comment the above settings of DOCUMENT_ROOT, SPAW_ROOT and SPAW_DIR
 
-// and use this block if the above fails.
+  // and use this block if the above fails.
 
-// set SPAW_DIR manually. If you access demo page by http://domain.com/spaw2/demo/demo.php
+  // set SPAW_DIR manually. If you access demo page by http://domain.com/spaw2/demo/demo.php
 
-// then set SPAW_DIR to /spaw2/
+  // then set SPAW_DIR to /spaw2/
 
-SpawConfig::setStaticConfigItem('SPAW_DIR', '/admin/editors/spaw2/');
+  SpawConfig::setStaticConfigItem('SPAW_DIR', '/admin/editors/spaw2/');
 
-// and the following settings will be calculated automaticly
+  // and the following settings will be calculated automaticly
 
-SpawConfig::setStaticConfigItem('SPAW_ROOT', str_replace("\\","/",realpath(dirname(__FILE__)."/..").'/'));
+  SpawConfig::setStaticConfigItem('SPAW_ROOT', str_replace("\\","/",realpath(dirname(__FILE__)."/..").'/'));
 
-SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', substr(SpawConfig::getStaticConfigValue('SPAW_ROOT'),0,strlen(SpawConfig::getStaticConfigValue('SPAW_ROOT'))-strlen(SpawConfig::getStaticConfigValue('SPAW_DIR'))));
+  SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', substr(SpawConfig::getStaticConfigValue('SPAW_ROOT'),0,strlen(SpawConfig::getStaticConfigValue('SPAW_ROOT'))-strlen(SpawConfig::getStaticConfigValue('SPAW_DIR'))));
 
-*/
+ */
 
 
 
 /*
 
-// under IIS you will probably need to setup the above paths manually. it would be something like this
+  // under IIS you will probably need to setup the above paths manually. it would be something like this
 
-SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', 'c:/inetpub/wwwroot/');
+  SpawConfig::setStaticConfigItem('DOCUMENT_ROOT', 'c:/inetpub/wwwroot/');
 
-SpawConfig::setStaticConfigItem('SPAW_ROOT', 'c:/inetpub/wwwroot/spaw2/');
+  SpawConfig::setStaticConfigItem('SPAW_ROOT', 'c:/inetpub/wwwroot/spaw2/');
 
-SpawConfig::setStaticConfigItem('SPAW_DIR', '/spaw2/');
+  SpawConfig::setStaticConfigItem('SPAW_DIR', '/spaw2/');
 
-*/
+ */
 
 
 
 // DEFAULTS used when no value is set from code
-
 // language 
 
-SpawConfig::setStaticConfigItem('default_lang','en');
+SpawConfig::setStaticConfigItem('default_lang', 'en');
 
 // output charset (empty strings means charset specified in language file)
 
-SpawConfig::setStaticConfigItem('default_output_charset','');
+SpawConfig::setStaticConfigItem('default_output_charset', '');
 
 // theme 
 
-SpawConfig::setStaticConfigItem('default_theme','spaw2');
+SpawConfig::setStaticConfigItem('default_theme', 'spaw2');
 
 // toolbarset 
 
-SpawConfig::setStaticConfigItem('default_toolbarset','all');
+SpawConfig::setStaticConfigItem('default_toolbarset', 'all');
 
 // stylesheet
 
-SpawConfig::setStaticConfigItem('default_stylesheet',SpawConfig::getStaticConfigValue('SPAW_DIR').'wysiwyg.css');
+SpawConfig::setStaticConfigItem('default_stylesheet', SpawConfig::getStaticConfigValue('SPAW_DIR') . 'wysiwyg.css');
 
 // width 
 
-SpawConfig::setStaticConfigItem('default_width','100%');
+SpawConfig::setStaticConfigItem('default_width', '100%');
 
 // height 
 
-SpawConfig::setStaticConfigItem('default_height','200px');
+SpawConfig::setStaticConfigItem('default_height', '200px');
 
 
 
 // specifies if language subsystem should use iconv functions to convert strings to the specified charset
 
-SpawConfig::setStaticConfigItem('USE_ICONV',true);
+SpawConfig::setStaticConfigItem('USE_ICONV', true);
 
 // specifies rendering mode to use: "xhtml" - renders using spaw's engine, "builtin" - renders using browsers engine
 
@@ -130,124 +125,69 @@ SpawConfig::setStaticConfigItem('resizing_directions', 'vertical', SPAW_CFG_TRAN
 
 // data for style (css class) dropdown list
 
-SpawConfig::setStaticConfigItem("dropdown_data_core_style",
-
-  array(
-
+SpawConfig::setStaticConfigItem("dropdown_data_core_style", array(
     '' => 'Normal',
-
     'style1' => 'Style No.1',
-
     'style2' => 'Style No.2',
-
-  )
-
+        )
 );
 
 // data for style (css class) dropdown in table properties dialog
 
-SpawConfig::setStaticConfigItem("table_styles",
-
-  array(
-
+SpawConfig::setStaticConfigItem("table_styles", array(
     '' => 'Normal',
-
     'style1' => 'Style No.1',
-
     'style2' => 'Style No.2',
-
-  )
-
+        )
 );
 
 // data for fonts dropdown list
 
-SpawConfig::setStaticConfigItem("dropdown_data_core_fontname",
-
-  array(
-
+SpawConfig::setStaticConfigItem("dropdown_data_core_fontname", array(
     'Arial' => 'Arial',
-
     'Courier' => 'Courier',
-
     'Tahoma' => 'Tahoma',
-
     'Times New Roman' => 'Times',
-
     'Verdana' => 'Verdana'
-
-  )
-
+        )
 );
 
 // data for fontsize dropdown list
 
-SpawConfig::setStaticConfigItem("dropdown_data_core_fontsize",
-
-  array(
-
+SpawConfig::setStaticConfigItem("dropdown_data_core_fontsize", array(
     '1' => '1',
-
     '2' => '2',
-
     '3' => '3',
-
     '4' => '4',
-
     '5' => '5',
-
     '6' => '6'
-
-  )
-
+        )
 );
 
 // data for paragraph dropdown list
 
-SpawConfig::setStaticConfigItem("dropdown_data_core_formatBlock",
-
-  array(
-
+SpawConfig::setStaticConfigItem("dropdown_data_core_formatBlock", array(
     'Normal' => 'Normal',
-
     '<H1>' => 'Heading 1',
-
     '<H2>' => 'Heading 2',
-
     '<H3>' => 'Heading 3',
-
     '<H4>' => 'Heading 4',
-
     '<H5>' => 'Heading 5',
-
     '<H6>' => 'Heading 6',
-
     '<pre>' => 'Preformatted',
-
     '<address>' => 'Address',
-
-    '<p>' => 'Paragraph'    
-
-  )
-
+    '<p>' => 'Paragraph'
+        )
 );
 
 // data for link targets drodown list in hyperlink dialog
 
-SpawConfig::setStaticConfigItem("a_targets",
-
-  array(
-
+SpawConfig::setStaticConfigItem("a_targets", array(
     '_self' => 'Self',
-
     '_blank' => 'Blank',
-
     '_top' => 'Top',
-
     '_parent' => 'Parent'
-
-  )
-
+        )
 );
 
 
@@ -255,71 +195,40 @@ SpawConfig::setStaticConfigItem("a_targets",
 
 
 // toolbar sets (should start with "toolbarset_"
-
 // standard core toolbars
 
-SpawConfig::setStaticConfigItem('toolbarset_standard',
-
-  array(
-
+SpawConfig::setStaticConfigItem('toolbarset_standard', array(
     "format" => "format",
-
     "style" => "style",
-
     "edit" => "edit",
-
     "table" => "table",
-
     "plugins" => "plugins",
-
     "insert" => "insert",
-
     "tools" => "tools"
-
-  ) 
-
+        )
 );
 
 // all core toolbars
 
-SpawConfig::setStaticConfigItem('toolbarset_all',
-
-  array(
-
+SpawConfig::setStaticConfigItem('toolbarset_all', array(
     "format" => "format",
-
     "style" => "style",
-
     "edit" => "edit",
-
     "table" => "table",
-
     "plugins" => "plugins",
-
     "insert" => "insert",
-
     "tools" => "tools",
-
-    "font" => "font"   
-
-  ) 
-
+    "font" => "font"
+        )
 );
 
 // mini core toolbars
 
-SpawConfig::setStaticConfigItem('toolbarset_mini',
-
-  array(
-
+SpawConfig::setStaticConfigItem('toolbarset_mini', array(
     "format" => "format_mini",
-
     "edit" => "edit",
-
     "tools" => "tools"
-
-  ) 
-
+        )
 );
 
 
@@ -329,47 +238,24 @@ SpawConfig::setStaticConfigItem('toolbarset_mini',
 
 
 // SpawFm plugin config:
-
-
-
 // global filemanager settings
 
 SpawConfig::setStaticConfigItem(
-
-  'PG_SPAWFM_SETTINGS',
-
-  array(
-
-    'allow_upload'        => false,         // allow uploading new files in directory
-
-    'allow_modify'        => false,         // allow edit filenames/delete files in directory
-
-    'max_upload_filesize' => 0,             // max upload file size allowed in bytes, or 0 to ignore
-
-    'max_img_width'       => 0,             // max uploaded image width allowed, or 0 to ignore
-
-    'max_img_height'      => 0,             // max uploaded image height allowed, or 0 to ignore
-
-    'chmod_to'            => false,         // change the mode of an uploaded file (like to octal 0777 - see PHP chmod() 
-
-                                            // function description for details), or false to leave default
-
-    'allowed_filetypes'   => array('images','flash','video'),  // allowed filetypes groups/extensions
-
-    'recursive'           => true,         // allow using subdirectories
-
-    'allow_modify_subdirectories' => false,  // allow renaming/deleting subdirectories
-
-    'allow_create_subdirectories' => false,  // allow creating subdirectories
-
-    'view_mode'           => 'list',      // directory view mode: list/details/thumbnails - TO DO
-
-    //'thumbnails_enabled'  => true,        // enable thumbnails view mode - TO DO
-
-  ),
-
-  SPAW_CFG_TRANSFER_SECURE
-
+        'PG_SPAWFM_SETTINGS', array(
+    'allow_upload' => false, // allow uploading new files in directory
+    'allow_modify' => false, // allow edit filenames/delete files in directory
+    'max_upload_filesize' => 0, // max upload file size allowed in bytes, or 0 to ignore
+    'max_img_width' => 0, // max uploaded image width allowed, or 0 to ignore
+    'max_img_height' => 0, // max uploaded image height allowed, or 0 to ignore
+    'chmod_to' => false, // change the mode of an uploaded file (like to octal 0777 - see PHP chmod() 
+    // function description for details), or false to leave default
+    'allowed_filetypes' => array('any'), // allowed filetypes groups/extensions
+    'recursive' => true, // allow using subdirectories
+    'allow_modify_subdirectories' => false, // allow renaming/deleting subdirectories
+    'allow_create_subdirectories' => false, // allow creating subdirectories
+    'view_mode' => 'list', // directory view mode: list/details/thumbnails - TO DO
+        //'thumbnails_enabled'  => true,        // enable thumbnails view mode - TO DO
+        ), SPAW_CFG_TRANSFER_SECURE
 );
 
 
@@ -377,97 +263,57 @@ SpawConfig::setStaticConfigItem(
 // directories
 
 SpawConfig::setStaticConfigItem(
-
-  'PG_SPAWFM_DIRECTORIES',
-
-  array(
-
+        'PG_SPAWFM_DIRECTORIES', array(
     array(
-
-      'dir'     => '/images/banners/flash/',
-
-      'caption' => 'Flash movies', 
-
-      'params'  => array(
-
-        'allowed_filetypes' => array('flash')
-
-      )
-
+        'dir' => '/images/banners/flash/',
+        'caption' => 'Flash movies',
+        'params' => array(
+            'allowed_filetypes' => array('flash')
+        )
     ),
-
     array(
-
-      'dir'     => '/images/banners/',
-
-      'caption' => 'Banner images',
-
-      'params'  => array(
-
-        'default_dir' => false, // set directory as default (optional setting)
-
-        'allowed_filetypes' => array('images')
-
-      )
-
+        'dir' => '/images/banners/',
+        'caption' => 'Banner images',
+        'params' => array(
+            'default_dir' => true, // set directory as default (optional setting)
+            'allowed_filetypes' => array('images')
+        )
     ),
-
     array(
-
-      'dir'     => '/images/news/',
-
-      'caption' => 'News',
-
-      'params'  => array(
-
-        'default_dir' => true, // set directory as default (optional setting)
-
-        'allowed_filetypes' => array('images')
-
-      )
-
+        'dir' => '/images/news/',
+        'caption' => 'News',
+        'params' => array(
+            'default_dir' => true, // set directory as default (optional setting)
+            'allowed_filetypes' => array('images')
+        )
     ),
-
     array(
-
-      'dir'     => '/images/',
-
-      'caption' => 'Images',
-
-      'params'  => array(
-
-        'allowed_filetypes' => array('images')
-
-      )
-
+        'dir' => '/images/',
+        'caption' => 'Images',
+        'params' => array(
+            'allowed_filetypes' => array('images')
+        )
     ),
+        /*
 
-	/*
 
-	
 
-    array(
+          array(
 
-      'dir'     => '/images/files/',
+          'dir'     => '/images/files/',
 
-      //'fsdir'   => SpawConfig::getStaticConfigValue('SPAW_ROOT').'uploads/files/', // optional absolute physical filesystem path
+          //'fsdir'   => SpawConfig::getStaticConfigValue('SPAW_ROOT').'uploads/files/', // optional absolute physical filesystem path
 
-      'caption' => 'Files', 
+          'caption' => 'Files',
 
-      'params'  => array(
+          'params'  => array(
 
-        'allowed_filetypes' => array('any')
+          'allowed_filetypes' => array('any')
 
-      )
+          )
 
-    ),
+          ),
 
-	*/
-
-  ),
-
-  SPAW_CFG_TRANSFER_SECURE
-
+         */
+        ), SPAW_CFG_TRANSFER_SECURE
 );
-
-?>

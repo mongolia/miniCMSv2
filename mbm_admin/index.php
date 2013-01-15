@@ -117,7 +117,7 @@ function show_sub(id){
           <tr>
             <td height="26" background="images/content_title_bg.jpg" style="background-repeat:repeat-x;padding-left:15px;"><table width="95%" border="0" cellspacing="0" cellpadding="0">
                  <tr>
-                  <td width="90%"><div id="title_box"><img src="images/mnglogo14x14.gif" hspace="3" style="float:left" />v2.0</div>
+                  <td width="90%"><div id="title_box"><img src="images/mnglogo14x14.gif" hspace="3" style="float:left"; />v2.0</div>
                       <span id="content_title" style="padding-left:10px; padding-top:5px;"></span></td>
                   <td align="right"><?=$DB2->mbm_get_field($_SESSION['user_id'],'id','username','users')?></td>
                 </tr>
@@ -142,7 +142,7 @@ function show_sub(id){
 				include_once(ABS_DIR.INCLUDE_DIR."mbm_admin/home.php");
 			}
 		
-?></td>
+	?></td>
                 </tr>
             </table></td>
           </tr>

@@ -128,8 +128,8 @@ echo  mbmNextPrev('index.php?module=menu&cmd=content_list'.$next_withmenu,$DB->m
 	}
 	echo '<a href="index.php?module=menu&cmd=content_list&action=st&id='.$DB->mbm_result($r_contents,$i,"id").'&st=';
 		echo abs(($DB->mbm_result($r_contents,$i,"st")%2)-1);
-	echo '">';
-	echo '<img src="'.DOMAIN.DIR.'mbm_admin/images/icons/'.$st_con.'" border="0" />';
+	echo '"';
+	echo '<img src="images/icons/'.$st_con.'" border="0" />';
 	echo '</a>';
 	?></td>
     <td align="center"> <select class="input" name="lev" 

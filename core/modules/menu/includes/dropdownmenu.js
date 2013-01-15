@@ -1,3 +1,22 @@
+// my dropdown menu :: mbmDropDownMenus2($menu_id=0);
+
+$(document).ready(function(){
+	$("#menusDD .menusDD").each(function(){
+		$(this).mouseover(function(){
+			$("#sub"+$(this).attr("id")+"").show();//alert(i);
+			$("#"+$(this).attr("id")+" a:first").addClass("menu_active");
+			$("#"+$(this).attr("id")+" a:first").css("color","#FFF");
+		});
+		$(this).mouseout(function(){
+			$('.menusDDsub').hide();
+			$("#"+$(this).attr("id")+" a:first").removeClass("menu_active");
+			$("#"+$(this).attr("id")+" a:first").css("color","#FFF");
+			makeTopMenuActive();
+		});
+	});
+});
+
+
 //** Chrome Drop Down Menu- Author: Dynamic Drive (http://www.dynamicdrive.com)
 
 //** Updated: July 14th 06' to v2.0

@@ -54,6 +54,7 @@ function mbmMenuDesc($mid, $m_id){
 
 function mbmShowMenu2($htmls,$mid,$m_id,$padding_left=15,$class='menu'){
 	global $DB, $Mas, $buffer;
+	static $buf;
 	$q_menu = "SELECT * FROM ".PREFIX."menus WHERE st=1 
 				AND lang='".$_SESSION['ln']."'
 				AND lev<=".$_SESSION['lev']." AND menu_id='".$mid."' ORDER BY pos";
@@ -100,7 +101,7 @@ function mbmShowMenu2($htmls,$mid,$m_id,$padding_left=15,$class='menu'){
 			}
 		}
 	}
-	return true;
+	return $buf;
 }
 
 function mbmShowMenu($htmls,$menu_id,$m_id,$padding_left=15,$class='menu'){
@@ -120,7 +121,7 @@ function mbmShowMenu($htmls,$menu_id,$m_id,$padding_left=15,$class='menu'){
 	return $buffer;
 }
 
-function mbmShowMenuById($htmls,$mid,$class='menu',$show_total_contents=0){
+function mbmShowMenuById($htmls,$mid,$class='menu',$show_total_contents=0,$show_submenus=0){
 	global $DB;
 	$buf = '';
 	$q_menu = "SELECT * FROM ".PREFIX."menus WHERE st=1 AND lev<=".$_SESSION['lev']." AND lang='".$_SESSION['ln']."' AND menu_id='".$mid."' ORDER BY pos";
@@ -143,6 +144,9 @@ function mbmShowMenuById($htmls,$mid,$class='menu',$show_total_contents=0){
 				$buf .= ' <span class="tCon">('.mbmMenuTotalContents(array('menu_id'=>$DB->mbm_result($r_menu,$i,"id"))).')</span>';
 			}
 			$buf .= '</a>';
+			if($show_submenus == 1){
+				$buf .= mbmShowMenuById($htmls,$DB->mbm_result($r_menu,$i,"id"),$class,$show_total_contents,$show_submenus);
+			}
 			$buf .=$htmls[1];
 		}
 	}
@@ -175,7 +179,7 @@ function mbmMenuLink($menu_id=0,$link='http://'){
 	if($link=='#'){
 		$url = $url.'" onclick="return false;';
 	}
-	return $url;
+	return DOMAIN.DIR.$url;
 }
 
 function mbmMenuBuildPath($menu_code){
@@ -303,10 +307,11 @@ function mbmMenuListByIdLi($var = array(
 	$q = "SELECT * FROM ".PREFIX."menus WHERE ";
 	$q .= "st='".$var['st']."' ";
 	$q .= "AND lev<='".$var['lev']."' ";
+	$q .= "AND lang='".$_SESSION['ln']."' ";
 	if(!isset($var['menu_id'])){
 		$var['menu_id'] = 0;
 	}
-		$q .= "AND menu_id='".$var['menu_id']."' ";
+	$q .= "AND menu_id='".$var['menu_id']."' ";
 	$q .= "ORDER BY pos ASC";
 	
 	$r = $DB->mbm_query($q);

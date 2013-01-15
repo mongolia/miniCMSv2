@@ -12,7 +12,7 @@ function mbmShowBanner($type=''){
 	if($DB->mbm_num_rows($r)==0){
 		$buf = '';
 	}else{
-		$buf = '<div title="'.addslashes($DB->mbm_result($r,0,'comment')).'" class="banner" ';
+		$buf = '<div class="banner" ';
 		if(strlen(str_replace("http://","",$DB->mbm_result($r,0,'link')))>10){
 			$buf .= 'onclick="window.open(\'index.php?action=banner&amp;id='.$DB->mbm_result($r,0,'id')
 				.'&amp;url='.base64_encode($DB->mbm_result($r,0,'link')).'\',\'banner\',\'scrollbars=1,toolbar=1,addressbar=1\')"';

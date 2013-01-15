@@ -44,7 +44,7 @@ echo  mbmNextPrev('index.php?module=shoutbox&cmd=list'.$next_withmenu.$continue_
 	<td>
     <?
     	echo '<strong>';
-		echo $DB->mbm_result($r_shoutbox,$i,"name").' - '.$DB->mbm_result($r_shoutbox,$i,"email");
+		echo $DB->mbm_result($r_shoutbox,$i,"name").' - '.$DB->mbm_result($r_shoutbox,$i,"email").'-'.$DB->mbm_result($r_shoutbox,$i,"ip");
 		echo '</strong> ['.$DB->mbm_result($r_shoutbox,$i,"country").']';
 		echo '<br />';
 		echo $DB->mbm_result($r_shoutbox,$i,"content");

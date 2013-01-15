@@ -54,6 +54,10 @@
 	$lang["admin_leftmenu"]["photogallery_categories"] = "Бүлгүүд";
 	$lang["admin_leftmenu"]["photogallery_cat_add"] = "Бүлэг нэмэх";
 	$lang["admin_leftmenu"]["photogallery_files"] = "Файлууд";
+	$lang["admin_leftmenu"]["company"] = "Байгууллага";
+	$lang["admin_leftmenu"]["categories"] = 'Төрлүүд';
+	$lang["admin_leftmenu"]["company_add"] = 'Байгууллага нэмэх';
+	$lang["admin_leftmenu"]["company_services"] = 'Үйлчилгээнүүд';
 	$lang["admin_leftmenu"]["admin_history"] = "Admin history";
 	$lang["admin_leftmenu"]["stats_module"] = "Статистикс";
 	$lang["admin_leftmenu"]["download_module"] = "Файл татах";

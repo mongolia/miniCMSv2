@@ -32,14 +32,14 @@
           <div id="submenu"><a href="index.php?module=comments&amp;cmd=list">
             <?= $lang["admin_leftmenu"]["content_comments"]?> - 2
           </a></div>
+          <div id="submenu"><a href="index.php?module=shoutbox&amp;cmd=list">
+            <?= $lang['shoutbox']['title']?>
+          </a></div>
           <div id="submenu"><a href="index.php?module=menu&amp;cmd=menu_permission_add">
             <?= $lang['admin_leftmenu']['user_permission_add']?>
           </a></div>
           <div id="submenu"><a href="index.php?module=menu&amp;cmd=menu_permissions_list">
             <?= $lang['admin_leftmenu']['user_permission_list']?>
-          </a></div>
-          <div id="submenu"><a href="index.php?module=shoutbox&amp;cmd=list">
-            <?= $lang['shoutbox']['title']?>
           </a></div>
           <div id="submenu"><a href="index.php?module=menu&amp;cmd=menu_users">menu users</a></div>
           <div id="submenu"><a href="index.php?module=fileshare&cmd=myfiles">Fileshare</a></div>
@@ -261,31 +261,23 @@
             <?=$lang["zar"]["zar_types"]?>
           </a></div>
       </div>
-      <div id="menu_main" onclick="show_sub('menu33')"><img src="images/icon_pg.jpg" width="23" height="19" hspace="3" align="absmiddle" />
-          Football
+      <div id="menu_main" onclick="show_sub('menu18')"><img src="images/icon_pg.jpg" width="23" height="19" hspace="3" align="absmiddle" />
+          <?=$lang["admin_leftmenu"]["company"]?>
       </div>
-      <div id="menu33" style="display:none;	border-bottom:1px solid #000000;">
-          <div id="submenu"><a href="index.php?module=football&cmd=add">
-            Add team
+      <div id="menu18" style="display:none;	border-bottom:1px solid #000000;">
+          <div id="submenu"><a href="index.php?module=companies&cmd=categories">
+            <?=$lang["admin_leftmenu"]["categories"]?>
           </a></div>
-          <div id="submenu"><a href="index.php?module=football&cmd=list">
-            Teams
+          <div id="submenu"><a href="index.php?module=companies&cmd=company_services">
+            <?=$lang["admin_leftmenu"]["company_services"]?>
           </a></div>
-      </div>
-      
-      <div id="menu_main" onclick="show_sub('menu34')"><img src="images/icon_pg.jpg" width="23" height="19" hspace="3" align="absmiddle" />
-          Survey
-      </div>
-      <div id="menu34" style="display:none;	border-bottom:1px solid #000000;">
-          <div id="submenu"><a href="index.php?module=survey&cmd=add">
-            Add survey
+          <div id="submenu"><a href="index.php?module=companies&cmd=company_add">
+            <?=$lang["admin_leftmenu"]["company_add"]?>
           </a></div>
-          <div id="submenu"><a href="index.php?module=survey&cmd=list">
-            List
+          <div id="submenu"><a href="index.php?module=companies&cmd=companies">
+             <?=$lang["admin_leftmenu"]["company"]?>
           </a></div>
       </div>
-      
-      
       <div id="menu_main" style="display:none;" onclick="show_sub('menu88')"><img src="images/icon_users.gif" width="23" height="19" hspace="3" align="absmiddle" />Дуу хөгжим</div>
       <div id="menu88" style="display:none; border-bottom:1px solid #000000;">
           <div id="submenu"><a href="index.php?module=music&cmd=types"><strong>Хөгжмийн төрөл</strong></a></div>

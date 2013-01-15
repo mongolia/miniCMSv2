@@ -13,7 +13,7 @@ echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www
 if(strtolower(basename($_SERVER['PHP_SELF']))=='azmn.php'){
 	echo '<base target="_blank">';
 }
-echo '<link rel="shortcut icon" title="Icon" href="http://mng.cc/favicon.ico" type="image/x-icon" />';
+echo '<link rel="shortcut icon" title="Icon" href="favicon.ico" type="image/x-icon" />';
 	
 	mbm_include("templates/".TEMPLATE."/css",'css');	
 	mbm_include(INCLUDE_DIR."functions_js",'js');	

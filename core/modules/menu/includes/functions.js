@@ -6,23 +6,21 @@ $(document).ready(function(){
 	var inputContentId = $("#content_id");
 	var loading = $("#contentComments");
 	var messageList = $("#contentComments");
-	
+	var ehlel = 0;
 	//functions
 	function updateContentComments(loadURL){
-		//just for the fade effect
-		messageList.hide();
-		loading.fadeIn();
-		//send the post to shoutbox.php
+		loadURL = loadURL + '&l='+ehlel;
 		$.ajax({
 			type: "POST", url: loadURL, data: "",
 			complete: function(data){
-				loading.fadeOut();
-				messageList.html(data.responseText);
-				messageList.fadeIn(2000);
+				//loading.fadeOut();
+				messageList.append(data.responseText);
+				//messageList.show("fast");
+				ehlel = ehlel + 20;
 			}
 		});
 	}
-	updateContentComments("xml.php?action=content_comment&content_id="+$("#content_id").attr("value"));
+	updateContentComments("xml.php?action=content_comment&l=0&content_id="+$("#content_id").attr("value"));
 	//check if all fields are filled
 	function checkFaqsForm(){
 		if(inputUser.attr("value") && inputMessage.attr("value"))
@@ -30,10 +28,9 @@ $(document).ready(function(){
 		else
 			return false;
 	}
-	
-	//Load for the first time the shoutbox data
-	//updateShoutbox();
-	
+	$("#moreContentComments").click(function(){
+		updateContentComments("xml.php?action=content_comment&content_id="+$("#content_id").attr("value")+'&l='+ehlel);
+	});
 	//on submit event
 	$("#contentCommentForm").submit(function(){
 		if(checkFaqsForm()){
@@ -51,12 +48,6 @@ $(document).ready(function(){
 				complete: function(data){
 					messageList.html(data.responseText);
 					$("#contentCommentForm").hide('fast');
-					//messageList.html(nick+'-'+message+'-'+email);
-					//$("#comment_name").attr("value")='';
-					//$("#comment_content").attr("value")='';
-					//updateContentComments("xml.php?action=content_comment&content_id="+$("#content_id").attr("value"));
-					//reactivate the send button
-					//$("#commentSubmit").attr({ disabled:false, value:buttonValue });
 					window.location='#lastComment';
 				}
 			 });

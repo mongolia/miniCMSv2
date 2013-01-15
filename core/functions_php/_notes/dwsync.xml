@@ -8,4 +8,6 @@
 <file name="file.php" server="az.mn" local="128583865853125000" remote="128583578400000000" />
 <file name="share.php" server="az.mn" local="128607286447656250" remote="128606998800000000" />
 <file name="time.php" server="az.mn" local="128599739077343750" remote="128599451400000000" />
+<file name="admin.php" server="apu.mn/web/" local="129128839464843750" remote="129128839550000000" />
+<file name="common.php" server="apu.mn/web/" local="129134026872812500" remote="129134026950000000" />
 </dwsync>

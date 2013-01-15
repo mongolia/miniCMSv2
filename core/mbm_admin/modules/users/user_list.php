@@ -53,7 +53,7 @@ if($mBm!=1 || $_SESSION['lev']<$modules_permissions[$_GET['module']] ||
 	}
 	$q_user .= "ORDER BY lev DESC";
 	$r_user = $DB2->mbm_query($q_user);
-	echo $q_user;
+	//echo $q_user;
 	echo mbmNextPrev('index.php?module=users&cmd=user_list',$DB2->mbm_num_rows($r_user),START, PER_PAGE);
 ?>
 <table width="100%" border="0" cellspacing="2" cellpadding="3" class="tblContents">

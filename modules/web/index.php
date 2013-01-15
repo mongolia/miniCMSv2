@@ -1,3 +1,3 @@
-<?
-	$module_include_dir[] = INCLUDE_DIR.'modules/web/includes';
+<?
+	$module_include_dir[] = INCLUDE_DIR.'modules/web/includes';
 ?>

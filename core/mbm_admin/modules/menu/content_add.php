@@ -80,7 +80,7 @@ if(isset($_POST['st'])){
 			$data_video['date_added'] = mbmTime();
 			$data_video['date_lastupdated'] = $data_video['date_added'];
 			$data_video['user_id'] = $_SESSION['user_id'];
-			$data_video['comment'] = nl2br($_POST['video_comment']);
+			$data_video['comment'] = $_POST['video_comment'];
 			$data_video['title'] = $_POST['video_title'];
 			
 			
@@ -147,7 +147,7 @@ if(isset($_POST['st'])){
 					$b=1;
 					foreach($_POST['img_title'] as $k=>$v){
 						
-						$photo_filename = mbmTime().'-'.$k.strtolower(substr($_FILES['img_file']['name'][$k],-4));
+						$photo_filename = mbmTime().'-'.basename(str_replace($name_array[0],$name_array[1],$_FILES['img_file']['name'][$k]));
 						
 						if(!move_uploaded_file($_FILES['img_file']['tmp_name'][$k],ABS_DIR.PHOTO_DIR.$photo_filename)){
 							$result_txt .= $_FILES['img_file']['name'][$k].' '.$lang['menu']['command_image_file_upload_failed'].'.<br />';
@@ -367,9 +367,11 @@ if($b!=1){
 				
 				//downloading video
 				mbmDownloadWithCURL($download_link,ABS_DIR.$video_dlURL);
-				$fileSize = filesize(ABS_DIR.$video_dlURL);
 				//if($fileSize>100000) $download_link = DOMAIN.DIR.$video_dlURL;
-				
+				if(file_exists(ABS_DIR.$video_dlURL)){
+					$download_link = DOMAIN.DIR.$video_dlURL;
+				}
+				$fileSize = filesize(ABS_DIR.$video_dlURL);
 				//downloading photo
 				mbmDownloadWithCURL($thumbnailValue,ABS_DIR.VIDEO_DIR.$filename_image);
 				$thumbnailValue = VIDEO_DIR.$filename_image;
@@ -516,11 +518,14 @@ HH:MM:SS</td>
                         <td bgcolor="#f5f5f5">'.$lang['menu']['only_images_allowed'].'</td>
                       </tr>';
                 echo '<tr><td bgcolor="#f5f5f5">&nbsp;</td><td bgcolor="#f5f5f5">&nbsp;</td></tr>';
-                echo '<tr><td bgcolor="#f5f5f5">'.$lang['menu']['content_short'].':<br>
-                        <textarea name="content_short" cols="45" rows="3" id="menu_comment">'.$_POST['content_short'].'</textarea></td>
-                        <td bgcolor="#f5f5f5">&nbsp;</td></tr>';
+                echo '<tr><td bgcolor="#f5f5f5" colspan="2">';
+				//echo $lang['menu']['content_short'].':<br>';
+				mbmShowHTMLEditor("short",'spaw2','spaw','all',array(0=>$_POST['content_short'],1=>'')
+							,'en','100%',"200px");
+				echo '</td></tr>';
                 echo '<tr><td bgcolor="#f5f5f5">&nbsp;</td><td bgcolor="#f5f5f5">&nbsp;</td></tr>';
-                echo '<tr><td bgcolor="#f5f5f5">'.$lang['menu']['video_comment'].':<br>
+                echo '<tr><td bgcolor="#f5f5f5">';
+				echo $lang['menu']['video_comment'].':<br>
                         <textarea name="video_comment" cols="45" rows="3" id="menu_comment">'.$_POST['video_comment'].'</textarea></td>
                         <td bgcolor="#f5f5f5">&nbsp;</td></tr>';
             break;

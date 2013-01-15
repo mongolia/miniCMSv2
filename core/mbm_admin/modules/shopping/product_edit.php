@@ -11,17 +11,19 @@ if(isset($_POST['updateProduct'])){
 
 	$data['cat_ids'] = ',';
 	
-	foreach($_POST['cat_id'] as $k=>$v){
-		$data['cat_ids'] .= $v.',';
+	if(is_array($_POST['cat_id'])){
+		foreach($_POST['cat_id'] as $k=>$v){
+			$data['cat_ids'] .= $v.',';
+		}
+	}else{
+		$b=2;
+		$result_txt .= 'Категори сонго<br />';
 	}
 	$data['user_id'] = $_SESSION['user_id'];
 	$data['st'] = $_POST['st'];
 	$data['lev'] = $_POST['lev'];
 	$data['type_id'] = $_POST['type_id'];
-	if($data['cat_ids']==','){
-		$b=2;
-		$result_txt = 'Cat songo';
-	}
+
 	$data['price'] = $_POST['price'];
 	$data['name'] = $_POST['name'];
 	$data['content_short'] = $_POST['content_short'];
@@ -51,13 +53,13 @@ if(isset($_POST['updateProduct'])){
 		$data['image_filesize'] = $_FILES['image_thumb']['size'];
 		if($b!=2){
 			if($DB->mbm_update_row($data,"shop_products",$_GET['id'])==1){
-				$result_txt = $lang["shopping"]["command_update_processed"];
+				$result_txt .= $lang["shopping"]["command_update_processed"];
 				$b=1;
 			}else{
-				$result_txt = $lang["shopping"]["command_update_failed"];
+				$result_txt .= $lang["shopping"]["command_update_failed"];
 			}
 		}else{
-			$result_txt = $lang["shopping"]["command_update_failed"];
+			$result_txt .= $lang["shopping"]["command_update_failed"];
 		}
 	}
 	echo '<div id="query_result">'.$result_txt.'</div>';
@@ -115,6 +117,13 @@ if($DB->mbm_check_field('id',$_GET['id'],'shop_products')==0){
 			  </select></td>
 			<td bgcolor="#f5f5f5">&nbsp;</td>
 		  </tr>
+      <tr>
+        <td bgcolor="#f5f5f5">&nbsp;</td>
+        <td bgcolor="#f5f5f5">&nbsp;</td>
+      </tr><tr>
+        <td bgcolor="#f5f5f5"><?=$lang['main']['tags']?>:<br /><input name="tag" type="text" size="45" value="<?=$tagValue?>" id="tag" /></td>
+        <td bgcolor="#f5f5f5">&nbsp;</td>
+      </tr>
 		  <tr>
 			<td bgcolor="#f5f5f5">&nbsp;</td>
 			<td bgcolor="#f5f5f5">&nbsp;</td>

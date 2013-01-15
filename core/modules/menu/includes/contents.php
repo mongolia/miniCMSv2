@@ -74,24 +74,15 @@ function mbmShowContentShort($menu_id,$var = array(
 	}
 	for($i=START;$i<$end;$i++){
 		
-		$buf .= '<div id="contentShort">';
+		$buf .= '<div class="contentShort">';
 		if($DB->mbm_result($r,$i,"show_title")==1){
 			$buf .= '<div class="contentTitle" onclick="window.location=\''.DOMAIN.DIR.'index.php?module=menu&amp;cmd=content&amp;id='
 				.$DB->mbm_result($r,$i,"id").'&amp;menu_id='
 				.mbmReturnMenuId($DB->mbm_result($r,$i,"menu_id")).'\'">'
 				.mbmCleanUpHTML($DB->mbm_result($r,$i,"title")).'</div>';
-			$buf .= '<div  class="mbmTimeConverter">'
+			$buf11 .= '<div  class="mbmTimeConverter">'
 				.mbmTimeConverter($DB->mbm_result($r,$i,"date_added"))
 				.'</div>';
-		}
-		if($var['show_briefInfo']==1){
-			$buf .= mbmContentBriefInfo(array(
-										  'content_id'=>$DB->mbm_result($r,$i,"id"),
-										  'user_id'=>$DB->mbm_result($r,$i,"user_id"),
-										  'menu_id'=>$DB->mbm_result($r,$i,"menu_id"),
-										  'hits'=>$DB->mbm_result($r,$i,"hits"),
-										  'rating'=>$DB->mbm_result($r,$i,"id")
-										  ));
 		}
 		if($DB->mbm_result($r,$i,"cleanup_html")==1){
 			$content_short = mbmCleanUpHTML($DB->mbm_result($r,$i,"content_short"));
@@ -168,15 +159,6 @@ function mbmShowContentShort($menu_id,$var = array(
 	}
 	$buf .= mbmNextPrev(''.DOMAIN.DIR.'index.php?module=menu&amp;cmd=content&amp;menu_id='.MENU_ID.$query_string,$DB->mbm_num_rows($r),START,PER_PAGE_CONTENTS);
 
-	/*
-	$htmls_video[0] = '<table width="100%" cellpadding="3" cellspacing="2" border="0" style="clear:both;"><tr>';
-	$htmls_video[2] = '<td align="center" width="25%" valign="top">';
-	$htmls_video[3] = '</td>';
-	$htmls_video[1] = '</tr></table>';
-    $buf .= mbmShowNewContents($htmls_video,4,"is_video",0);
-    $buf .= mbmShowNewContents($htmls_video,4,"is_photo",0);
-	*/
-
 	if($DB->mbm_num_rows($r)==0){
 		return $lang['menu']['no_content'];
 	}else{
@@ -227,7 +209,7 @@ function mbmShowContentMore($htmls=array('','','',''), $id){
 			}else{
 				$content_type = 'normal';
 			}
-			$buf .= mbmContentInformation(array(
+			$buf__ .= mbmContentInformation(array(
 													'id'=>$id,
 													'title'=>$DB->mbm_result($r_cnt,0,"title"),
 													'user_id'=>$DB->mbm_result($r_cnt,0,"user_id"),
@@ -238,7 +220,7 @@ function mbmShowContentMore($htmls=array('','','',''), $id){
 												)
 										  );
 			if($DB->mbm_result($r_cnt,0,"use_comment")==1){
-				$buf .= mbmShowContentCommentForm($id);
+				$buf__ .= mbmShowContentCommentForm($id);
 			}
 		}else{
 			$buf .= '<div id="query_result">'.$lang['error']['low_level_content'].'</div>';
@@ -264,7 +246,7 @@ function mbmShowNewContents($htmls=array(0=>'',1=>'',2=>'',3=>''),$limit=10,$typ
 			$q_contents .= "is_photo=1 ";
 		break;
 		case 'is_video':
-			$q_contents .= "is_video>0 ";
+			$q_contents .= "is_video=1 ";
 		break;
 		case 'normal':
 			$q_contents .= "is_video=0 AND is_photo=0 ";
@@ -300,8 +282,7 @@ function mbmShowNewContents($htmls=array(0=>'',1=>'',2=>'',3=>''),$limit=10,$typ
 				$buf .= mbmMediaContentThumbImage(
 									array(
 											'content_id'=>$DB->mbm_result($r_contents,$i,"id"),
-											'type'=>'video',
-											'is_video'=>$DB->mbm_result($r_contents,$i,"is_video")
+											'type'=>'video'
 											)
 								  );
 				$buf .= '</a>';
@@ -479,6 +460,27 @@ function mbmMediaContentThumbImage(
 	$buf = '';
 	
 	switch($value["type"]){
+		case 'video':
+			$q_content_video = "SELECT * FROM ".PREFIX."menu_videos WHERE content_id='".$value["content_id"]."' ORDER BY RAND() LIMIT 1";
+			$r_content_video = $DB->mbm_query($q_content_video);
+			if($DB->mbm_num_rows($r_content_video)==1){
+				$buf .= '<img src="'.DOMAIN.DIR;
+				if(substr_count($DB->mbm_result($r_content_video,0,"url"),DOMAIN.DIR)>0){
+					$img_url = str_replace(DOMAIN.DIR,"",$DB->mbm_result($r_content_video,0,"image_url"));
+				}else{
+					$img_url = $DB->mbm_result($r_content_video,0,"image_url");
+				}
+				$img_type = $DB->mbm_result($r_content_video,0,"image_filetype");
+				$buf .= 'img.php?type='
+						.$img_type
+						.'&amp;f='
+						.base64_encode($img_url)
+						.'&amp;w=80';
+				$buf .= '" border="0" hspace="5" class="thumb_img" />';
+			}else{
+				$buf = '';
+			}
+		break;
 		case 'photo':
 			$q_content_photo = "SELECT * FROM ".PREFIX."menu_photos WHERE content_id='".$value["content_id"]."' ORDER BY RAND() LIMIT 1";
 			$r_content_photo = $DB->mbm_query($q_content_photo);
@@ -491,38 +493,6 @@ function mbmMediaContentThumbImage(
 				}
 				$img_type = $DB->mbm_result($r_content_photo,0,"filetype");
 				$buf .= DOMAIN.DIR.'img.php?type='
-						.$img_type
-						.'&amp;f='
-						.base64_encode($img_url)
-						.'&amp;w=80';
-				$buf .= '" border="0" hspace="5" class="thumb_img" />';
-			}else{
-				$buf = '';
-			}
-		break;
-		case 'video':
-			switch($value["is_video"]) {
-				case 1:
-					$videoTBL = 'menu_videos';
-				break;
-				case 2:
-					$videoTBL = 'menu_youtube';
-				break;
-				default:
-					$videoTBL = 'menu_videos';
-				break;
-			}
-			$q_content_video = "SELECT * FROM ".PREFIX.$videoTBL." WHERE content_id='".$value["content_id"]."' ORDER BY RAND() LIMIT 1";
-			$r_content_video = $DB->mbm_query($q_content_video);
-			if($DB->mbm_num_rows($r_content_video)==1){
-				$buf .= '<img src="'.DOMAIN.DIR;
-				if(substr_count($DB->mbm_result($r_content_video,0,"url"),DOMAIN.DIR)>0){
-					$img_url = str_replace(DOMAIN.DIR,"",$DB->mbm_result($r_content_video,0,"image_url"));
-				}else{
-					$img_url = $DB->mbm_result($r_content_video,0,"image_url");
-				}
-				$img_type = $DB->mbm_result($r_content_video,0,"image_filetype");
-				$buf .= 'img.php?type='
 						.$img_type
 						.'&amp;f='
 						.base64_encode($img_url)
@@ -584,7 +554,7 @@ function mbmContentBriefInfo($var = array(
 		$buf .= '</li>';
 	$buf .= '</ul></div><br clear="both" />';
 	
-	return $buf;
+	return '';//$buf;
 }
 function mbmContentCommentsTotal($content_id=0){
 	global $DB;

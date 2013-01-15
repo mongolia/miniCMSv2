@@ -16,7 +16,7 @@ class DB{
 		$this->mbm_select_db();
 	}
 	function mbm_connect(){
-		if(!$link=@mysql_connect($this->db["db_host"],$this->db["db_user"],$this->db["db_pass"])){
+		if(!$link=@mysql_pconnect($this->db["db_host"],$this->db["db_user"],$this->db["db_pass"])){
 			//$this->link=0;
 			die("could not connect to database server".substr($this->db["db_user"],5));
 		}

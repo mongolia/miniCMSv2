@@ -54,7 +54,6 @@ class SpawTheme
    */
   function getTheme($name)
   {
-    if (strpos($name, '/') || strpos($name, "\\")) die("illegal theme name");
     $theme = new SpawTheme($name);
     $theme->loadData();
     return $theme;
@@ -441,7 +440,6 @@ class SpawTheme
    */
   function loadData()
   {
-    if (strpos($this->name, '/') || strpos($this->name, "\\")) die("illegal theme name");
     $pgdir = SpawConfig::getStaticConfigValue("SPAW_ROOT").'plugins/';
     if (is_dir($pgdir)) {
      // load theme settings

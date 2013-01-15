@@ -62,36 +62,7 @@ $config = new SpawConfig();
 
 $config->restoreSecureConfig(SpawVars::getGetVar("scid"));
 
-switch($_SESSION['lev']){
-	case 5:
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify', 1);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_upload', 1);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify_subdirectories', true);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_create_subdirectories', true);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'recursive', true);
-	break;
-	case 4:
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify', 1);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_upload', 1);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify_subdirectories', true);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_create_subdirectories', true);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'recursive', true);
-	break;
-	case 3:
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify', 1);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_upload', 1);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify_subdirectories', false);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_create_subdirectories', true);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'recursive', true);
-	break;
-	default:
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify', 0);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_upload', 0);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_modify_subdirectories', false);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'allow_create_subdirectories', false);
-		$config->setConfigValueElement('PG_SPAWFM_SETTINGS', 'recursive', false);
-	break;
-}
+require_once(ABS_DIR.INCLUDE_DIR."config_globals.php");
 
 $theme = SpawTheme::getTheme(SpawVars::getGetVar("theme"));
 $htpl = $theme->getTemplateDialogHeader();

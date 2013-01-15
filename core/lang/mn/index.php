@@ -6,6 +6,7 @@
 	include_once("lang_bbcode.php");
 	include_once("lang_blog.php");
 	include_once("lang_comments.php");
+	include_once("lang_companies.php");
 	include_once("lang_country.php");
 	include_once("lang_dic.php");
 	include_once("lang_faqs.php");

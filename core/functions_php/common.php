@@ -4,7 +4,7 @@ function mbmNextPrev($url=NULL,$num_rows=0,$start=0,$per_page=10)
 {
 	global $lang;
 	$total_pages = ceil($num_rows/$per_page);
-	$current_page = (($start/$per_page)+1);
+	$current_page = ((abs($start)/$per_page)+1);
 	
 	
 	$tmp_cccccc = 5; // heden shirhegiig haruulah
@@ -36,11 +36,11 @@ function mbmNextPrev($url=NULL,$num_rows=0,$start=0,$per_page=10)
 	}
 	for($i=$i_start;$i<=$end;$i++){
 		if($i==$current_page){
-			$buf .= '<span id="page_numbers" style="border:2px solid #333;color:#333;">';
+			$buf .= '<span id="page_numbers" style="border:2px solid #C0C0C0;color:#9F9F9F;">';
 			$buf .= '<strong>'.$i.'</strong>';
 		}else{
 			$buf .= '<span id="page_numbers">';
-			$buf .= '<a href="'.$url.'&amp;start='.(($i-1)*$per_page).'" style="color:#333;">';
+			$buf .= '<a href="'.$url.'&amp;start='.(($i-1)*$per_page).'" style="color:#9F9F9F;">';
 			$buf .= $i;
 			$buf .= '</a>';
 		}

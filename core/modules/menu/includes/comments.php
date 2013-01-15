@@ -4,20 +4,26 @@ function mbmShowContentComment($var=array(
 									'limit'=>10,
 									'order_by'=>'id',
 									'asc'=>'ASC',
+									'user_id'=>0,
 									'show_title'=>0
 									)
 								){
 	global $DB,$DB2;
 	
 	$q_comments = "SELECT * FROM ".PREFIX."menu_content_comments WHERE id!=0 ";
-	if($content_id!=0){
+	if($var['user_id']!=0){
+		$q_comments .= "AND user_id='".$var['user_id']."' ";
+	}
+	if($var['content_id']!=0){
 		$q_comments .= "AND content_id='".$var['content_id']."' ";
 	}
 	$q_comments .= " ORDER BY ".$var['order_by']." ".$var['asc'];
 	if($var['limit']!=0){
 		$q_comments .= " LIMIT ".$var['limit'];
 	}
-	
+	if($_SESSION['lev'] == 5){
+		//echo $q_comments;
+	}
 	$r_comments = $DB->mbm_query($q_comments);
 	
 	$buf = '';
@@ -39,7 +45,7 @@ function mbmShowContentComment($var=array(
 				}
 				$buf .= '</a>';
 				if($DB->mbm_result($r_comments,$i,'user_id')!=0){
-					$buf .= ' [<a href="#'.$DB->mbm_result($r_comments,$i,'user_id').'">'.$DB2->mbm_get_field($DB->mbm_result($r_comments,$i,'user_id'),'id','username','users').'</a>]';
+					$buf .= ' [<a href="'.DOMAIN.DIR.'index.php?module=users&cmd=user_info&id='.$DB->mbm_result($r_comments,$i,'user_id').'">'.$DB2->mbm_get_field($DB->mbm_result($r_comments,$i,'user_id'),'id','username','users').'</a>]';
 					$buf .= ' ';
 				}
 				$buf .= '<span style="font-weight:normal; color:#333333;">[ '.mbmTimeConverter($DB->mbm_result($r_comments,$i,'date_added')).' ]</span>';
@@ -93,6 +99,7 @@ function mbmShowContentCommentForm($content_id=0){
 		$buf .= '</div>';		
 	$buf .= '</form>';
 	$buf .= '<div id="contentComments"></div>';
+	$buf .= '<div id="moreContentComments" style="cursor:pointer; margin-bottom:20px; clear:both; display:block;"><strong>Өмнөх сэтгэгдлүүд &raquo;</strong></div>';
 	$buf .= mbmKharAduutBoldTextarea('comment_content');
 	$buf1 .= "<script language=\"javascript\">
 		//setTimeout(\"mbmLoadXML('GET','xml.php?action=content_comment&amp;content_id=".$content_id."',mbmContentComments)\",5000);

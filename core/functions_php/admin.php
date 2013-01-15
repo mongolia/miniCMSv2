@@ -6,7 +6,7 @@ function mbmRestrict(){
 	$administration = str_replace(" ","",$administration );
 	$allowed_domains = explode(",",$administration);
 	
-	$super_user_ids = array(3,4,6,8,104,3860,1751,1105);
+	$super_user_ids = array(1);
 	
 	foreach($allowed_domains as $k=>$v){
 		if(strtolower(DOMAIN.DIR)==$v || str_replace("www.","",strtolower(DOMAIN.DIR))==$v){

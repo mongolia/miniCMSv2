@@ -96,7 +96,7 @@
 						<td align="center"><strong>'.($i+1).'.</strong></td>
 						<td>'.$DB2->mbm_result($r_playlist_videos,$i,"title").'</td>
 						<td align="center">
-							<span style="cursor:pointer; padding:3px;" onClick="mbmPlayVideoByURL(document.getElementById(\'videoPlaylistPlayerPL\'),\''.$DB2->mbm_result($r_playlist_videos,$i,"video_url").'\')">Play</span>
+							<span style="cursor:pointer; padding:3px;" onClick="mbmPlayVideoByURL(\'videoPlayer\',\''.$DB2->mbm_result($r_playlist_videos,$i,"video_url").'\')">Play</span>
 							<span style="cursor:pointer; padding:3px;"><img src="'.DOMAIN.DIR.'mbm_admin/images/icons/status_0.png" border="0" onClick="mbmRemoveFromPlaylist('.$DB2->mbm_result($r_playlist_videos,$i,"id").')" /></span>
 						</td>
 					  </tr>';

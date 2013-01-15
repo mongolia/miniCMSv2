@@ -1,0 +1,32 @@
+<?
+	$lang["companies"]["company"] = "Байгууллага";
+	$lang["companies"]["name_mn"] = "Байгууллагын нэр";
+	$lang["companies"]["name_en"] = "Байгууллагын англи нэр";
+	$lang["companies"]["h2_contacts"] = "Холбоо тогтоох";
+	$lang["companies"]["h2_content_mroe"] = "Дэлгэрэнгүй мэдээлэл";
+	$lang["companies"]["h2_services"] = "Үйлчилгээ";
+	$lang["companies"]["phone"] = "Утас";
+	$lang["companies"]["fax"] = "Факс";
+	$lang["companies"]["email"] = "Имэйл";
+	$lang["companies"]["web"] = "Вэбсайт";
+	$lang["companies"]["address"] = "Хаяг";
+	$lang["companies"]["content_short"] = "Товч мэдээлэл";
+	$lang["companies"]["content_more"] = "Дэлгэрэнгүй мэдээлэл";
+	$lang["companies"]["services"] = "Үйлчилгээ";
+	$lang["companies"]["select_logo"] = "Лого сонго";
+	$lang["companies"]["city"] = "Хот";
+	$lang["companies"]["district"] = "Дүүрэг";
+	$lang["companies"]["categories"] = "Төрлүүд";
+	$lang["companies"]["category_name"] = "Төрлийн нэр";
+	$lang["companies"]["category_comment"] = "Төрлийн тайлбар";
+	$lang["companies"]["service_name"] = "Үйлчилгээний нэр";
+	$lang["companies"]["service_comment"] = "Үйлчилгээний тайлбар";
+	$lang["companies"]["add_company"] = "Байгууллагыг нэмэх";
+	$lang["companies"]["add_category"] = "Төрөл нэмэх";
+	$lang["companies"]["add_service"] = "Үйлчилгээ нэмэх";
+	$lang["companies"]["insert_command_processed"] = "Succesfully inserted";
+	$lang["companies"]["insert_command_failed"] = "Insert command failed";
+	$lang["companies"]["deleted"] = "Deleted";
+	$lang["companies"]["delete_error"] = "Could not delete";
+	$lang["companies"][""] = "";
+?>

@@ -55,7 +55,7 @@ function mbmFlvPlayer($flvPlayerVars = array()){
 	}
 	
 	$buf = "
-			<div id='".$flvPlayerVars['name']."''>This text will be replaced</div>
+			<div id='".$flvPlayerVars['name']."''>".DOMAIN.DIR."images/loading.gif</div>
 			
 			<script type='text/javascript'>
 			  var so = new SWFObject('".INCLUDE_DOMAIN."data/jwplayer/player.swf','".$flvPlayerVars['name']."PL','".$flvPlayerVars['width']."','".$flvPlayerVars['height']."','9','#ffffff');
@@ -74,10 +74,10 @@ function mbmFlvPlayer($flvPlayerVars = array()){
 	$buf = '<embed id="videoPlayer" name="videoPlayer" src="'.INCLUDE_DOMAIN.'data/jwplayer/player.swf" 
 		allowfullscreen="true" 
 		width="'.$flvPlayerVars['width'].'" 
-		height="'.$flvPlayerVars['height'].'"
-		flashvars="logo='.$flvPlayerVars['title'].'&bufferlength=2&file='.$file_path.'&amp;skin='.INCLUDE_DOMAIN.'data/jwplayer/skin/modieus.swf&amp;plugins=gapro-1&gapro.accountid=UA-6849739-2" 
+		height="'.$flvPlayerVars['height'].'" 
+		flashvars="logo='.$flvPlayerVars['title'].'&bufferlength=8&file='.$file_path.'&amp;skin='.INCLUDE_DOMAIN.'data/jwplayer/skin/modieus.swf&autostart=true" 
 		>';
-		
+	//&amp;plugins=gapro-1&gapro.accountid=UA-6849739-2	
 	return $buf;
 }
 

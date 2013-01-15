@@ -4,7 +4,7 @@
 if(isset($_GET['dl'])){
 	switch($_GET['dl']){
 		case 'content_video':
-			die("<h2>Uuchlaaraa. Site iin zugees  Video tataltiig haasan bolno... </h2>");
+			//die("<h2>Uuchlaaraa. Site iin zugees  Video tataltiig haasan bolno... </h2>");
 			if($DB->mbm_check_field('id',$_GET['id'],'menu_videos')==1){
 
 				$file_url = $DB->mbm_get_field($_GET['id'],'id','url','menu_videos');
@@ -34,16 +34,18 @@ if(isset($_GET['dl'])){
 				//if(file_exists(str_replace(DOMAIN.DIR,ABS_DIR,$file_url))) echo 1; exit;
 				if($_SESSION['lev'] == 0){
 					$file_url = DOMAIN.DIR.'index.php?module=users&cmd=registration';
+					header("Location: ".$file_url);
+				}else{
+					mbmDownloadWithLimit(
+						array(
+							'real_path'=>str_replace(DOMAIN.DIR,ABS_DIR,$file_url), //file iin original path
+							'user_filename'=>basename($file_url), //hereglegch yamar nereer tatah
+							'download_rate'=>$download_rate //tatah hurd  0.1 == 100bytes p/s
+							)
+						);
+					$q_update_info = "UPDATE ".PREFIX."menu_videos SET downloaded=downloaded+".HITS_BY." WHERE id='".$_GET['id']."'";
+					$DB->mbm_query($q_update_info);
 				}
-				mbmDownloadWithLimit(
-					array(
-						'real_path'=>str_replace(DOMAIN.DIR,ABS_DIR,$file_url), //file iin original path
-						'user_filename'=>basename($file_url), //hereglegch yamar nereer tatah
-						'download_rate'=>$download_rate //tatah hurd  0.1 == 100bytes p/s
-						)
-					);
-				$q_update_info = "UPDATE ".PREFIX."menu_videos SET downloaded=downloaded+".HITS_BY." WHERE id='".$_GET['id']."'";
-				$DB->mbm_query($q_update_info);
 				/*
 				header("Location: ".$file_url);
 				*/

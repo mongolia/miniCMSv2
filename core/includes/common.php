@@ -1,7 +1,10 @@
 <?
+//if (substr_count($_SERVER['HTTP_ACCEPT_ENCODING'], 'gzip')) ob_start("ob_gzhandler"); else ob_start(); 
+
 $tddddddddddddd = time();
 //include zamiig todorhoilj uguh
 ini_set('include_path',ABS_DIR . INCLUDE_DIR);
+ini_set('session.cookie_lifetime',88888);
 set_time_limit(0);
 define("PREFIX",$config['db_prefix']);
 $security_key = md5('mbm');

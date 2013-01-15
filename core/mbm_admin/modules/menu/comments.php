@@ -67,7 +67,7 @@ echo  mbmNextPrev('index.php?module=menu&cmd=comments'.$next_withmenu.$continue_
 		echo $DB->mbm_result($r_menu_content_comments,$i,"name");
 		echo ' - ['.$DB->mbm_get_field($DB->mbm_result($r_menu_content_comments,$i,"content_id"),'id','title','menu_contents').']';
 		echo '</a>';
-		echo '</strong> ['.$DB->mbm_result($r_menu_content_comments,$i,"id").']';
+		echo '</strong> ['.$DB->mbm_result($r_menu_content_comments,$i,"id").'] '.$DB->mbm_result($r_menu_content_comments,$i,"ip");
 		echo '<br />';
 		echo mbmCleanUpHTML($DB->mbm_result($r_menu_content_comments,$i,"comment"));
 	?>

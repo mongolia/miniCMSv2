@@ -19,6 +19,8 @@ if($("#loginStatusText")){
 </script>
 </body>
 </html>';
+$DB->mbm_close();
+$DB2->mbm_close();
 include_once(ABS_DIR.INCLUDE_DIR.'debug.php');
 unset($_SESSION['login_st']);
 ?>

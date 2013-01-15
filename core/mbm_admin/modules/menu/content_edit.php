@@ -327,9 +327,16 @@ HH:MM:SS</td>
                         <td bgcolor="#f5f5f5">'.$lang['menu']['only_images_allowed'].'</td>
                       </tr>';
                 echo '<tr><td bgcolor="#f5f5f5">&nbsp;</td><td bgcolor="#f5f5f5">&nbsp;</td></tr>';
-                echo '<tr><td bgcolor="#f5f5f5">'.$lang['menu']['content_short'].':<br>
+               /*
+			    echo '<tr><td bgcolor="#f5f5f5">'.$lang['menu']['content_short'].':<br>
                         <textarea name="content_short" cols="45" rows="3" id="content_short">'.$DB->mbm_result($r_content_edit,0,"content_short").'</textarea></td>
                         <td bgcolor="#f5f5f5">&nbsp;</td></tr>';
+			   */
+				echo '<tr><td bgcolor="#f5f5f5" colspan="2">';
+				//echo $lang['menu']['content_short'].':<br>';
+				mbmShowHTMLEditor("short",'spaw2','spaw','all',array(0=>$DB->mbm_result($r_content_edit,0,"content_short"),1=>'')
+							,'en','100%',"200px");
+				echo '</td></tr>';
                 echo '<tr><td bgcolor="#f5f5f5">'.$lang['menu']['video_comment'].':<br>
                         <textarea name="comment" cols="45" rows="3" id="menu_comment">'.$DB->mbm_result($r_total_videos,0,"comment").'</textarea></td>
                         <td bgcolor="#f5f5f5">&nbsp;</td></tr>';

@@ -81,7 +81,9 @@ function mBmTimeConverter($time=0){
 	if($minutes==0){
 		$result = $seconds.' '.$lang["main"]["seconds_ago"];
 	}
-	
+	if($time <(mbmTime()-24*3600*180)){
+		return date("Y/m/d",$time);
+	}
 	return $result;
 }
 
